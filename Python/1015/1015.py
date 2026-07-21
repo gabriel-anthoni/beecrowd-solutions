@@ -1,0 +1,5 @@
+A     = input().split()
+B     = input().split()
+x1,y1 = float(A[0]),float(A[1])
+x2,y2 = float(B[0]),float(B[1])
+print(f"{pow(((x2-x1)**2)+((y2-y1)**2),0.5):.4f}")

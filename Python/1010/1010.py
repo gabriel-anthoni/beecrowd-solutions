@@ -1,0 +1,5 @@
+a = input().split()
+b = input().split()
+a[0],a[1],a[2] = int(a[0]),int(a[1]),float(a[2])
+b[0],b[1],b[2] = int(b[0]),int(b[1]),float(b[2])
+print(f"VALOR A PAGAR: R$ {(a[1]*a[2])+(b[1]*b[2]):.2f}")
