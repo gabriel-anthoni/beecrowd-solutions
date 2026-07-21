@@ -28,3 +28,23 @@
 <p align="center">
   Repository with solutions and documentation for Beecrowd exercises, focused on studying and practicing programming logic.
 </p>
+
+---
+
+### 🛠️ Linguagens de Programação:
+
+<div align="center">
+  <a href="https://skillicons.dev">
+    <!-- Badge Python  -->
+    <img src="https://skillicons.dev/icons?i=python"/>
+  </a>
+</div>
+
+#### 🌐 Idiomas:
+
+<div>
+  <!-- Badge Português (Brasil) -->
+  <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="40" title="Português (PT-BR)">
+  <!-- Badge Inglês -->
+  <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="40" title="Inglês (EN)">
+</div>
