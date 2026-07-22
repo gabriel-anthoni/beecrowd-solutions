@@ -10,7 +10,7 @@
   <tr>
     <td>
       <p align="center"><img src="https://skillicons.dev/icons?i=c"></p>
-      <p align="center"><code>C</code></p>
+      <p align="center"><code>C99</code></p>
     </td>
     <td>
       <p align="center"><i>beecrowd | 1000</i></p>
@@ -64,7 +64,7 @@ Hello World!
   <tr>
     <td>
       <p align="center"><img src="https://skillicons.dev/icons?i=c"></p>
-      <p align="center"><code>C</code></p>
+      <p align="center"><code>C99</code></p>
     </td>
     <td>
       <p align="center"><i>beecrowd | 1000</i></p>
