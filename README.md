@@ -36,7 +36,7 @@
 <div align="center">
   <a href="https://skillicons.dev">
     <!-- Badge Python  -->
-    <img src="https://skillicons.dev/icons?i=python,java"/>
+    <img src="https://skillicons.dev/icons?i=c,python,java"/>
   </a>
 </div>
 
