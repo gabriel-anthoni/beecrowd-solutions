@@ -1,0 +1,127 @@
+### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+
+<!----------------------------------------------------------------------------------------->
+
+<table>
+  <tr>
+    <th width="300">Linguagem</th>
+    <th width="1000">Questão</th>
+  </tr>
+  <tr>
+    <td>
+      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
+      <p align="center"><code>Python 3.11</code></p>
+    </td>
+    <td>
+      <p align="center"><i>beecrowd | 1060</i></p>
+      <h3 align="center">Números Positivos</h3>
+    </td>
+  </tr>
+</table>
+
+<!----------------------------------------------------------------------------------------->
+
+#### 📥 Entrada:
+
+- Seis valores, negativos e/ou positivos, do tipo ponto flutuante (`float`).
+
+*Exemplo de entrada:*
+```
+7
+-5
+6
+-3.4
+4.6
+12
+```
+
+---
+
+<!----------------------------------------------------------------------------------------->
+
+#### 🧠 Lógica:
+
+- Inicialize uma variável contadora (`positives = 0`) para acompanhar a quantidade de números positivos.
+- Utilize um laço de repetição (`for`) para ler 6 valores de ponto flutuante (`float`).
+- Para cada número lido, verifique se ele é estritamente maior que zero (`number > 0`).
+- Se o número for positivo, incremente o contador em 1.
+- Ao final das 6 leituras, exiba a quantidade total no formato `X valores positivos`.
+
+---
+
+<!----------------------------------------------------------------------------------------->
+
+#### 📤 Saída:
+
+- Imprima a quantidade de valores positivos lidos.
+
+*Exemplo de saída:*
+```
+4 valores positivos
+```
+
+---
+
+<!----------------------------------------------------------------------------------------->
+
+### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
+
+<!----------------------------------------------------------------------------------------->
+
+<table>
+  <tr>
+    <th width="300">Language</th>
+    <th width="1000">Problem</th>
+  </tr>
+  <tr>
+    <td>
+      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
+      <p align="center"><code>Python 3.11</code></p>
+    </td>
+    <td>
+      <p align="center"><i>beecrowd | 1060</i></p>
+      <h3 align="center">Positive Numbers</h3>
+    </td>
+  </tr>
+</table>
+
+<!----------------------------------------------------------------------------------------->
+
+#### 📥 Input:
+
+- Six floating-point values (`float`), which can be positive and/or negative.
+
+*Example Input:*
+```
+7
+-5
+6
+-3.4
+4.6
+12
+```
+
+---
+
+<!----------------------------------------------------------------------------------------->
+
+#### 🧠 Logic:
+
+- Initialize a counter variable (`positives = 0`) to track the count of positive numbers.
+- Use a `for` loop to read 6 floating-point numbers (`float`).
+- For each input number, check if it is strictly greater than zero (`number > 0`).
+- If the number is positive, increment the counter by 1.
+- After all 6 iterations, print the total count in the format `X valores positivos`.
+
+---
+
+<!----------------------------------------------------------------------------------------->
+
+#### 📤 Output:
+
+- Print the total amount of positive numbers received as input.
+
+*Example Output:*
+```
+4 valores positivos
+```
