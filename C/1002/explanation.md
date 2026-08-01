@@ -13,8 +13,8 @@
       <p align="center"><code>C99</code></p>
     </td>
     <td>
-      <p align="center"><i>beecrowd | 1000</i></p>
-      <h3 align="center">Hello World!</h3>
+      <p align="center"><i>beecrowd | 1002</i></p>
+      <h3 align="center">Área do Círculo</h3>
     </td>
   </tr>
 </table>
@@ -23,7 +23,12 @@
 
 #### 📥 Entrada:
 
-- Este problema não possui nenhuma entrada de dados.
+- A entrada contém um valor de ponto flutuante de dupla precisão (`double`), correspondente ao raio do círculo.
+
+*Exemplo de entrada:*
+```
+2.00
+```
 
 ---
 
@@ -31,9 +36,11 @@
 
 #### 🧠 Lógica:
 
-- O objetivo deste problema inicial é exibir o texto padrão na tela.
-- Utilize a função `printf` para imprimir a mensagem exata `"Hello World!"`.
-- Não se esqueça de incluir o caractere de quebra de linha `\n` ao final do texto dentro do `printf`.
+- Leia o valor do raio $R$ utilizando `scanf("%lf", &radius)`.
+- Calcule a área do círculo através da fórmula:
+  $$A = \pi \cdot R^2$$
+- Utilize o valor estipulado para $\pi = 3.14159$.
+- Imprima o resultado formatado no padrão `A=X.XXXX`, com 4 casas decimais e quebra de linha `\n` ao final.
 
 ---
 
@@ -41,11 +48,11 @@
 
 #### 📤 Saída:
 
-- Imprima a mensagem `"Hello World!"`.
+- Imprima a mensagem `"A="` seguida pelo valor da variável área, com 4 casas após o ponto decimal.
 
 *Exemplo de saída:*
 ```
-Hello World!
+A=12.5664
 ```
 
 ---
@@ -67,8 +74,8 @@ Hello World!
       <p align="center"><code>C99</code></p>
     </td>
     <td>
-      <p align="center"><i>beecrowd | 1000</i></p>
-      <h3 align="center">Hello World!</h3>
+      <p align="center"><i>beecrowd | 1002</i></p>
+      <h3 align="center">Area of a Circle</h3>
     </td>
   </tr>
 </table>
@@ -77,7 +84,12 @@ Hello World!
 
 #### 📥 Input:
 
-- This problem has no input.
+- The input contains a double-precision floating-point value (`double`), representing the radius of the circle.
+
+*Example Input:*
+```
+2.00
+```
 
 ---
 
@@ -85,9 +97,11 @@ Hello World!
 
 #### 🧠 Logic:
 
-- The goal of this initial problem is to display standard text on the screen.
-- Use the `printf` function to output the exact message `"Hello World!"`.
-- Always include the newline character `\n` inside `printf` at the end of the string.
+- Read the radius value $R$ using `scanf("%lf", &radius)`.
+- Calculate the area of the circle using the formula:
+  $$A = \pi \cdot R^2$$
+- Use the defined value for $\pi = 3.14159$.
+- Output the result formatted as `A=X.XXXX`, with 4 decimal places and a newline `\n` at the end.
 
 ---
 
@@ -95,9 +109,9 @@ Hello World!
 
 #### 📤 Output:
 
-- Print the message `"Hello World!"`.
+- Print the message `"A="` followed by the area value formatted to 4 decimal places.
 
 *Example Output:*
 ```
-Hello World!
+A=12.5664
 ```

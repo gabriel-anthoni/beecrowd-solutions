@@ -13,8 +13,8 @@
       <p align="center"><code>C99</code></p>
     </td>
     <td>
-      <p align="center"><i>beecrowd | 1000</i></p>
-      <h3 align="center">Hello World!</h3>
+      <p align="center"><i>beecrowd | 1003</i></p>
+      <h3 align="center">Soma Simples</h3>
     </td>
   </tr>
 </table>
@@ -23,7 +23,13 @@
 
 #### 📥 Entrada:
 
-- Este problema não possui nenhuma entrada de dados.
+- A entrada contém dois valores inteiros.
+
+*Exemplo de entrada:*
+```
+30
+10
+```
 
 ---
 
@@ -31,9 +37,9 @@
 
 #### 🧠 Lógica:
 
-- O objetivo deste problema inicial é exibir o texto padrão na tela.
-- Utilize a função `printf` para imprimir a mensagem exata `"Hello World!"`.
-- Não se esqueça de incluir o caractere de quebra de linha `\n` ao final do texto dentro do `printf`.
+- Leia dois valores inteiros através da função `scanf` e armazene-os nas variáveis `A` e `B`.
+- Calcule a soma dos dois valores e atribua o resultado à variável `SOMA`.
+- Imprima o resultado no formato `SOMA = X`, onde `X` é o valor da soma, lembrando da quebra de linha `\n` ao final.
 
 ---
 
@@ -41,11 +47,11 @@
 
 #### 📤 Saída:
 
-- Imprima a mensagem `"Hello World!"`.
+- Imprima a mensagem `"SOMA = "` seguida do valor da variável `SOMA` e de uma quebra de linha.
 
 *Exemplo de saída:*
 ```
-Hello World!
+SOMA = 40
 ```
 
 ---
@@ -67,8 +73,8 @@ Hello World!
       <p align="center"><code>C99</code></p>
     </td>
     <td>
-      <p align="center"><i>beecrowd | 1000</i></p>
-      <h3 align="center">Hello World!</h3>
+      <p align="center"><i>beecrowd | 1003</i></p>
+      <h3 align="center">Simple Sum</h3>
     </td>
   </tr>
 </table>
@@ -77,7 +83,13 @@ Hello World!
 
 #### 📥 Input:
 
-- This problem has no input.
+- The input file contains two integer values.
+
+*Example Input:*
+```
+30
+10
+```
 
 ---
 
@@ -85,9 +97,9 @@ Hello World!
 
 #### 🧠 Logic:
 
-- The goal of this initial problem is to display standard text on the screen.
-- Use the `printf` function to output the exact message `"Hello World!"`.
-- Always include the newline character `\n` inside `printf` at the end of the string.
+- Read two integer values using `scanf` and store them in variables `A` and `B`.
+- Calculate the sum of the two values and assign the result to the variable `SOMA`.
+- Print the result formatted as `SOMA = X`, where `X` represents the sum, including a newline `\n` at the end.
 
 ---
 
@@ -95,9 +107,9 @@ Hello World!
 
 #### 📤 Output:
 
-- Print the message `"Hello World!"`.
+- Print the message `"SOMA = "` followed by the sum value and a newline character.
 
 *Example Output:*
 ```
-Hello World!
+SOMA = 40
 ```
