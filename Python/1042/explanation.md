@@ -1,57 +1,64 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1042">
+    <img src="https://skillicons.dev/icons?i=python" width="45" alt="Python Logo" />
+  </a>
 
-<table>
+  <h3>beecrowd 1042 — Sort Simples</h3>
+
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-2-green?style=flat-square" />
+  </p>
+
+</div>
+
+---
+
+### 📌 Resumo / Overview
+
+<table align="center" width="100%">
   <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém três números inteiros em uma única linha.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Leia os três números inteiros e armazene-os em uma lista usando <code>list(map(int, input().split()))</code>.<br>
+      • Crie uma nova lista com os valores ordenados em ordem crescente utilizando a função <code>sorted()</code>.<br>
+      • Imprima os elementos da lista ordenada, um por linha.<br>
+      • Imprima uma linha em branco separadora.<br>
+      • Imprima os elementos da lista original na ordem em que foram fornecidos.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima os três valores em ordem crescente, seguidos por uma linha em branco e, em seguida, pelos três valores na ordem original.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1042</i></p>
-      <h3 align="center">Sort Simples</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains three integer numbers on a single line.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read the three integer numbers into a list using <code>list(map(int, input().split()))</code>.<br>
+      • Create a new list with the numbers sorted in ascending order using Python's <code>sorted()</code> function.<br>
+      • Print the elements of the sorted list, one per line.<br>
+      • Print a blank line separator.<br>
+      • Print the elements of the original list in their initial sequence.<br><br>
+      <b>📤 Output:</b><br>
+      Print the three values in ascending order, followed by a blank line and then the three values in their original sequence.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Entrada:
-
-- A entrada contém três números inteiros em uma única linha.
-
-*Exemplo de entrada:*
-```
+```txt
 7 21 -14
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Lógica:
-
-- O objetivo é ler três números inteiros e exibi-los duas vezes:
-  1. Primeiro, ordenados em ordem crescente.
-  2. Depois, uma linha em branco.
-  3. Por fim, na ordem original em que foram fornecidos na entrada.
-- Para isso, a melhor estratégia é salvar os dados de entrada em uma lista e gerar uma cópia ordenada dessa lista usando a função `sorted()`. Assim, mantemos a lista original intacta para a segunda impressão.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Apresente a saída conforme a descrição do problema, lembrando-se de deixar uma linha em branco entre as duas sequências de números.
-
-*Exemplo de saída:*
-```
+```txt
 -14
 7
 21
@@ -59,71 +66,4 @@
 7
 21
 -14
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
-  <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1042</i></p>
-      <h3 align="center">Simple Sort</h3>
-    </td>
-  </tr>
-</table>
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📥 Input:
-
-- The input contains three integer numbers on a single line.
-
-*Example Input:*
-```
--14 21 7
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- The goal is to read three integers and print them twice:
-  1. First, sorted in ascending order.
-  2. Then, a blank line.
-  3. Finally, in the original sequence they were provided in the input.
-- To achieve this, the best approach is to store the inputs in a list and create a sorted copy of it using Python's `sorted()` function. This keeps the original list intact for the second print loop.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the output as described in the specifications, making sure to insert a blank line between the two sets of printed numbers.
-
-*Example Output:*
-```
--14
-7
-21
-
--14
-21
-7
 ```

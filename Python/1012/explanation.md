@@ -1,182 +1,70 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1012">
+    <img src="https://skillicons.dev/icons?i=python" width="45" alt="Python Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1012</i></p>
-      <h3 align="center">Área</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1012 — Área</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-2-green?style=flat-square" />
+  </p>
 
-#### 📥 Entrada:
-
-- A entrada contém três valores de ponto flutuante com dupla precisão: A, B e C.
-
-*Exemplo de entrada:*
-```
-3.0 4.0 5.2
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- Leia os três valores da linha de entrada usando `input().split()` e converta-os para `float()`.
-- Calcule a área de cada figura geométrica conforme as fórmulas abaixo:
-<br>
-
-- Área do triângulo retângulo que tem A por base e C por altura:
-
-$$
-TRIANGULO = \\frac{A \\cdot C}{2}
-$$
-
-- Área do círculo de raio C (utilizando $\\pi = 3.14159$):
-
-$$
-CIRCULO = \\pi \\cdot C^2
-$$
-
-- Área do trapézio que tem A e B por bases e C por altura:
-
-$$
-TRAPEZIO = \\frac{(A + B) \\cdot C}{2}
-$$
-
-- Área do quadrado que tem lado B:
-
-$$
-QUADRADO = B^2
-$$
-
-- Área do retângulo que tem lados A e B:
-
-$$
-RETANGULO = A \\cdot B
-$$
-
-- utilize f-string para formatar a saída com 3 casas decimais para cada cálculo.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- O arquivo de saída deve conter 5 linhas de dados. Cada linha corresponde a uma das áreas descritas acima, sempre com a mensagem correspondente e um espaço após os dois pontos, seguida pelo valor com 3 casas decimais.
-
-*Exemplo de saída:*
-```
-TRIANGULO: 7.800
-CIRCULO: 84.949
-TRAPEZIO: 18.200
-QUADRADO: 16.000
-RETANGULO: 12.000
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém três valores de ponto flutuante com dupla precisão: A, B e C.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Leia os três valores da linha de entrada usando <code>input().split()</code> e converta-os para <code>float()</code>.<br>
+      • Calcule a área de cada figura geométrica conforme as fórmulas:<br>
+      &nbsp;&nbsp;- Triângulo: <code>(A · C) / 2</code><br>
+      &nbsp;&nbsp;- Círculo: <code>π · C²</code> (utilizando <code>π = 3.14159</code>)<br>
+      &nbsp;&nbsp;- Trapézio: <code>((A + B) · C) / 2</code><br>
+      &nbsp;&nbsp;- Quadrado: <code>B²</code><br>
+      &nbsp;&nbsp;- Retângulo: <code>A · B</code><br>
+      • Utilize f-string para formatar a saída com 3 casas decimais para cada cálculo.<br><br>
+      <b>📤 Saída:</b><br>
+      O arquivo de saída deve conter 5 linhas de dados com as mensagens correspondentes seguidas pelos valores das áreas formatados com 3 casas decimais.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1012</i></p>
-      <h3 align="center">Area</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input file contains three double precision values: A, B and C.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read the three values from the input line using <code>input().split()</code> and convert them to <code>float()</code>.<br>
+      • Calculate the area of each geometric shape using the formulas:<br>
+      &nbsp;&nbsp;- Triangle: <code>(A · C) / 2</code><br>
+      &nbsp;&nbsp;- Circle: <code>π · C²</code> (using <code>π = 3.14159</code>)<br>
+      &nbsp;&nbsp;- Trapezium: <code>((A + B) · C) / 2</code><br>
+      &nbsp;&nbsp;- Square: <code>B²</code><br>
+      &nbsp;&nbsp;- Rectangle: <code>A · B</code><br>
+      • Use f-string to format the output with 3 decimal places for each calculation.<br><br>
+      <b>📤 Output:</b><br>
+      The output file must contain 5 lines of data with the corresponding labels followed by the calculated area values formatted with 3 decimal places.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input file contains three double precision values: A, B and C.
-
-*Example Input:*
-```
+```txt
 3.0 4.0 5.2
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read the three floating-point values from the input line using `input().split()` and convert them to `float()`.
-- Calculate the area of each geometric shape using the formulas:
-<br>
-
-- Rectangled triangle area with base A and height C:
-
-$$
-TRIANGULO = \\frac{A \\cdot C}{2}
-$$
-
-- Circle area with radius C (using $\\pi = 3.14159$):
-
-$$
-CIRCULO = \\pi \\cdot C^2
-$$
-
-- Trapezium area with bases A and B, and height C:
-
-$$
-TRAPEZIO = \\frac{(A + B) \\cdot C}{2}
-$$
-
-- Square area with side B:
-
-$$
-QUADRADO = B^2
-$$
-
-- Rectangle area with sides A and B:
-
-$$
-RETANGULO = A \\cdot B
-$$
-
-- use f-string to format the output with 3 decimal places for each calculation.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- The output file must contain 5 lines of data. Each line corresponds to one of the described areas, with the corresponding message and one space after the colon, followed by the value with 3 decimal places.
-
-*Example Output:*
-```
+```txt
 TRIANGULO: 7.800
 CIRCULO: 84.949
 TRAPEZIO: 18.200

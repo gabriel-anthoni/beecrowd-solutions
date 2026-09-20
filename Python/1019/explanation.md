@@ -1,147 +1,63 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1019">
+    <img src="https://skillicons.dev/icons?i=python" width="45" alt="Python Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1019</i></p>
-      <h3 align="center">Conversão de Tempo</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1019 — Conversão de Tempo</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-1-green?style=flat-square" />
+  </p>
 
-#### 📥 Entrada:
-
-- A entrada contém um valor inteiro correspondente ao tempo total em segundos.
-
-*Exemplo de entrada:*
-```
-140211
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- Leia o valor inteiro de segundos usando `int(input())`.
-- Calcule as horas dividindo o total de segundos por 3600 (divisão inteira `//`):
-
-$$
-Horas = TotalSegundos // 3600
-$$
-
-- Calcule os minutos obtendo o resto da divisão por 3600 e dividindo de forma inteira por 60, ou dividindo o total de segundos por 60 e pegando o resto da divisão por 60 (operador `%`):
-
-$$
-Minutos = (TotalSegundos // 60) \% 60
-$$
-
-- Calcule os segundos restantes obtendo o resto da divisão por 60:
-
-$$
-Segundos = TotalSegundos \% 60
-$$
-
-- utilize f-string para formatar a saída no padrão `horas:minutos:segundos`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima o tempo lido convertido para o formato `horas:minutos:segundos`.
-
-*Exemplo de saída:*
-```
-38:56:51
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém um valor inteiro correspondente ao tempo total em segundos.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Leia o valor inteiro de segundos usando <code>int(input())</code>.<br>
+      • Calcule as horas dividindo o total de segundos por 3600 (divisão inteira <code>//</code>): <code>Horas = TotalSegundos // 3600</code>.<br>
+      • Calcule os minutos: <code>Minutos = (TotalSegundos // 60) % 60</code>.<br>
+      • Calcule os segundos restantes: <code>Segundos = TotalSegundos % 60</code>.<br>
+      • Utilize f-string para formatar a saída no padrão <code>horas:minutos:segundos</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima o tempo lido convertido para o formato <code>horas:minutos:segundos</code>.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1019</i></p>
-      <h3 align="center">Time Conversion</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains an integer value representing the total time in seconds.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read the total seconds as an integer using <code>int(input())</code>.<br>
+      • Calculate the hours by dividing the total seconds by 3600 (integer division <code>//</code>): <code>Hours = TotalSeconds // 3600</code>.<br>
+      • Calculate the minutes: <code>Minutes = (TotalSeconds // 60) % 60</code>.<br>
+      • Calculate the remaining seconds: <code>Seconds = TotalSeconds % 60</code>.<br>
+      • Use f-string to format the output in the standard <code>hours:minutes:seconds</code> format.<br><br>
+      <b>📤 Output:</b><br>
+      Print the read time converted to the format <code>hours:minutes:seconds</code>.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input contains an integer value representing the total time in seconds.
-
-*Example Input:*
-```
+```txt
 140211
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read the total seconds as an integer using `int(input())`.
-- Calculate the hours by dividing the total seconds by 3600 (integer division `//`):
-
-$$
-Hours = TotalSeconds // 3600
-$$
-
-- Calculate the minutes by dividing the total seconds by 60 and then finding the remainder of division by 60 (modulo operator `%`):
-
-$$
-Minutes = (TotalSeconds // 60) \% 60
-$$
-
-- Calculate the remaining seconds using the modulo operator `%` by 60:
-
-$$
-Seconds = TotalSeconds \% 60
-$$
-
-- Use f-string to format the output in the standard `hours:minutes:seconds` format.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the read time converted to the format `hours:minutes:seconds`.
-
-*Example Output:*
-```
+```txt
 38:56:51
 ```

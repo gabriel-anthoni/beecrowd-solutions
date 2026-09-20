@@ -1,129 +1,65 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1043">
+    <img src="https://skillicons.dev/icons?i=python" width="45" alt="Python Logo" />
+  </a>
 
-<table>
+  <h3>beecrowd 1043 — Triângulo</h3>
+
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-2-green?style=flat-square" />
+  </p>
+
+</div>
+
+---
+
+### 📌 Resumo / Overview
+
+<table align="center" width="100%">
   <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém três valores de ponto flutuante A, B e C na mesma linha.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Leia os valores de A, B e C utilizando <code>map(float, input().split())</code>.<br>
+      • Verifique a condição de existência de um triângulo pela <b>desigualdade triangular</b>:<br>
+      &nbsp;&nbsp;<code>(A + B > C) and (A + C > B) and (B + C > A)</code><br>
+      • Se for verdadeiro, calcule o perímetro: <code>Perímetro = A + B + C</code> e exiba no formato <code>Perimetro = X.X</code>.<br>
+      • Se for falso, calcule a área de um trapézio de bases A e B e altura C: <code>Área = ((A + B) · C) / 2</code> e exiba no formato <code>Area = X.X</code>.<br>
+      • Formate o resultado com exatamente 1 casa decimal.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima a mensagem <code>Perimetro = ...</code> se formar um triângulo, ou <code>Area = ...</code> caso contrário, com 1 casa decimal.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1043</i></p>
-      <h3 align="center">Triângulo</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains three floating-point values A, B, and C on a single line.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read the A, B, and C values using <code>map(float, input().split())</code>.<br>
+      • Check the triangle existence condition using the <b>triangle inequality theorem</b>:<br>
+      &nbsp;&nbsp;<code>(A + B > C) and (A + C > B) and (B + C > A)</code><br>
+      • If true, calculate the perimeter: <code>Perimeter = A + B + C</code> and print as <code>Perimetro = X.X</code>.<br>
+      • If false, calculate the area of a trapezium with bases A and B and height C: <code>Area = ((A + B) · C) / 2</code> and print as <code>Area = X.X</code>.<br>
+      • Format the result to exactly 1 decimal place.<br><br>
+      <b>📤 Output:</b><br>
+      Print <code>Perimetro = ...</code> if a triangle is formed, or <code>Area = ...</code> otherwise, formatted with 1 decimal place.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Entrada:
-
-- A entrada contém três valores de ponto flutuante na mesma linha.
-
-*Exemplo de entrada:*
-```
+```txt
 6.0 4.0 2.0
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Lógica:
-
-- O objetivo é verificar se os três valores representados por $A$, $B$ e $C$ podem formar um triângulo.
-- De acordo com a **desigualdade triangular**, três segmentos de reta só podem formar um triângulo se a soma de quaisquer dois lados for estritamente maior que o terceiro lado restante:
-  - $A < B + C$
-  - $B < A + C$
-  - $C < A + B$
-- Se a condição for **verdadeira**:
-  - Calculamos o perímetro do triângulo:
-    $$\text{Perímetro} = A + B + C$$
-- Se a condição for **falsa**:
-  - Calculamos a área de um trapézio que tem bases $A$ e $B$ e altura $C$:
-    $$\text{Área} = \frac{(A + B) \times C}{2}$$
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima o resultado com exatamente uma casa decimal, seguido do tipo de medida calculada (`Perimetro = ...` ou `Area = ...`).
-
-*Exemplo de saída:*
-```
+```txt
 Area = 10.0
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
-  <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1043</i></p>
-      <h3 align="center">Triangle</h3>
-    </td>
-  </tr>
-</table>
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📥 Input:
-
-- The input contains three floating-point values written on a single line.
-
-*Example Input:*
-```
-6.0 4.0 2.1
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- The objective is to verify if three side lengths represented by $A$, $B$, and $C$ can successfully form a triangle.
-- According to the **triangle inequality theorem**, three segments can only form a triangle if the sum of any two sides is strictly greater than the remaining third side:
-  - $A < B + C$
-  - $B < A + C$
-  - $C < A + B$
-- If the condition is **true**:
-  - Calculate the perimeter of the triangle:
-    $$\text{Perimeter} = A + B + C$$
-- If the condition is **false**:
-  - Calculate the area of a trapezium where $A$ and $B$ are its parallel bases and $C$ is its height:
-    $$\text{Area} = \frac{(A + B) \times C}{2}$$
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the calculated value formatted to exactly one decimal place, preceded by the correct metric label (`Perimetro = ...` or `Area = ...`).
-
-*Example Output:*
-```
-Perimetro = 12.1
 ```

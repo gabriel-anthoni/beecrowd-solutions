@@ -1,137 +1,75 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1049">
+    <img src="https://skillicons.dev/icons?i=python" width="45" alt="Python Logo" />
+  </a>
 
-<table>
+  <h3>beecrowd 1049 — Animal</h3>
+
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-3-green?style=flat-square" />
+  </p>
+
+</div>
+
+---
+
+### 📌 Resumo / Overview
+
+<table align="center" width="100%">
   <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém 3 palavras (strings) em linhas separadas: subfilo, classe e tipo de alimentação.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Leia as três palavras utilizando <code>input().strip()</code>.<br>
+      • Avalie a <b>árvore de decisão</b> taxonômica usando condicionais aninhadas (<code>if/elif/else</code>) ou um dicionário de tuplas para mapeamento direto:<br>
+      &nbsp;&nbsp;- <code>vertebrado → ave → carnivoro</code>: <code>aguia</code><br>
+      &nbsp;&nbsp;- <code>vertebrado → ave → onivoro</code>: <code>pomba</code><br>
+      &nbsp;&nbsp;- <code>vertebrado → mamifero → onivoro</code>: <code>homem</code><br>
+      &nbsp;&nbsp;- <code>vertebrado → mamifero → herbivoro</code>: <code>vaca</code><br>
+      &nbsp;&nbsp;- <code>invertebrado → inseto → hematofago</code>: <code>pulga</code><br>
+      &nbsp;&nbsp;- <code>invertebrado → inseto → herbivoro</code>: <code>lagarta</code><br>
+      &nbsp;&nbsp;- <code>invertebrado → anelideo → hematofago</code>: <code>sanguessuga</code><br>
+      &nbsp;&nbsp;- <code>invertebrado → anelideo → onivoro</code>: <code>minhoca</code><br><br>
+      <b>📤 Saída:</b><br>
+      Imprima o nome do animal correspondente à combinação das três palavras.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1049</i></p>
-      <h3 align="center">Animal</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains 3 words (strings) on separate lines: subphylum, class, and diet type.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read the three words using <code>input().strip()</code>.<br>
+      • Traverse the taxonomic <b>decision tree</b> using nested conditionals (<code>if/elif/else</code>) or a tuple-keyed dictionary mapping:<br>
+      &nbsp;&nbsp;- <code>vertebrado → ave → carnivoro</code>: <code>aguia</code><br>
+      &nbsp;&nbsp;- <code>vertebrado → ave → onivoro</code>: <code>pomba</code><br>
+      &nbsp;&nbsp;- <code>vertebrado → mamifero → onivoro</code>: <code>homem</code><br>
+      &nbsp;&nbsp;- <code>vertebrado → mamifero → herbivoro</code>: <code>vaca</code><br>
+      &nbsp;&nbsp;- <code>invertebrado → inseto → hematofago</code>: <code>pulga</code><br>
+      &nbsp;&nbsp;- <code>invertebrado → inseto → herbivoro</code>: <code>lagarta</code><br>
+      &nbsp;&nbsp;- <code>invertebrado → anelideo → hematofago</code>: <code>sanguessuga</code><br>
+      &nbsp;&nbsp;- <code>invertebrado → anelideo → onivoro</code>: <code>minhoca</code><br><br>
+      <b>📤 Output:</b><br>
+      Print the animal's name corresponding to the combination of the three input words.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Entrada:
-
-- A entrada contém 3 palavras de texto (strings), em linhas separadas e com letras minúsculas, representando as características do animal:
-  1. Subfilo (`vertebrado` ou `invertebrado`)
-  2. Classe (`ave`, `mamifero`, `inseto` ou `anelideo`)
-  3. Alimentação (`carnivoro`, `onivoro`, `herbivoro` ou `hematofago`)
-
-*Exemplo de entrada:*
-```
+```txt
 vertebrado
 mamifero
 onivoro
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Lógica:
-
-- O problema consiste na navegação por uma **árvore de decisão** binária baseada em três níveis de classificação biológica.
-- Para cada combinação única de 3 palavras, existe exatamente um animal correspondente:
-  - `vertebrado` $\rightarrow$ `ave` $\rightarrow$ `carnivoro` $\implies$ **aguia**
-  - `vertebrado` $\rightarrow$ `ave` $\rightarrow$ `onivoro` $\implies$ **pomba**
-  - `vertebrado` $\rightarrow$ `mamifero` $\rightarrow$ `onivoro` $\implies$ **homem**
-  - `vertebrado` $\rightarrow$ `mamifero` $\rightarrow$ `herbivoro` $\implies$ **vaca**
-  - `invertebrado` $\rightarrow$ `inseto` $\rightarrow$ `hematofago` $\implies$ **pulga**
-  - `invertebrado` $\rightarrow$ `inseto` $\rightarrow$ `herbivoro` $\implies$ **lagarta**
-  - `invertebrado` $\rightarrow$ `anelideo` $\rightarrow$ `hematofago` $\implies$ **sanguessuga**
-  - `invertebrado` $\rightarrow$ `anelideo` $\rightarrow$ `onivoro` $\implies$ **minhoca**
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima o nome do animal correspondente às três características lidas.
-
-*Exemplo de saída:*
 ```
 homem
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
-  <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1049</i></p>
-      <h3 align="center">Animal</h3>
-    </td>
-  </tr>
-</table>
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📥 Input:
-
-- The input contains 3 words (strings), on separate lines and in lowercase, defining the animal's biological traits:
-  1. Subphylum (`vertebrado` or `invertebrado`)
-  2. Class (`ave`, `mamifero`, `inseto`, or `anelideo`)
-  3. Diet (`carnivoro`, `onivoro`, `herbivoro`, or `hematofago`)
-
-*Example Input:*
-```
-invertebrado
-anelideo
-hematofago
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- The task requires evaluating a binary **decision tree** based on three hierarchy levels.
-- Each unique triplet maps directly to one specific animal target:
-  - `vertebrado` $\rightarrow$ `ave` $\rightarrow$ `carnivoro` $\implies$ **aguia**
-  - `vertebrado` $\rightarrow$ `ave` $\rightarrow$ `onivoro` $\implies$ **pomba**
-  - `vertebrado` $\rightarrow$ `mamifero` $\rightarrow$ `onivoro` $\implies$ **homem**
-  - `vertebrado` $\rightarrow$ `mamifero` $\rightarrow$ `herbivoro` $\implies$ **vaca**
-  - `invertebrado` $\rightarrow$ `inseto` $\rightarrow$ `hematofago` $\implies$ **pulga**
-  - `invertebrado` $\rightarrow$ `inseto` $\rightarrow$ `herbivoro` $\implies$ **lagarta**
-  - `invertebrado` $\rightarrow$ `anelideo` $\rightarrow$ `hematofago` $\implies$ **sanguessuga**
-  - `invertebrado` $\rightarrow$ `anelideo` $\rightarrow$ `onivoro` $\implies$ **minhoca**
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the animal's name corresponding to the input characteristics.
-
-*Example Output:*
-```
-sanguessuga
 ```
