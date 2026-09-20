@@ -1,127 +1,71 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1041">
+    <img src="https://skillicons.dev/icons?i=python" width="45" alt="Python Logo" />
+  </a>
 
-<table>
+  <h3>beecrowd 1041 — Coordenadas de um Ponto</h3>
+
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-3-green?style=flat-square" />
+  </p>
+
+</div>
+
+---
+
+### 📌 Resumo / Overview
+
+<table align="center" width="100%">
   <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém dois valores de ponto flutuante na mesma linha representando as coordenadas x e y de um ponto no plano cartesiano.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Leia os valores de x e y utilizando <code>map(float, input().split())</code>.<br>
+      • Avalie a posição do ponto usando estruturas condicionais (<code>if/elif/else</code>):<br>
+      &nbsp;&nbsp;- <code>x == 0</code> e <code>y == 0</code>: <code>Origem</code><br>
+      &nbsp;&nbsp;- <code>x == 0</code> e <code>y ≠ 0</code>: <code>Eixo Y</code><br>
+      &nbsp;&nbsp;- <code>y == 0</code> e <code>x ≠ 0</code>: <code>Eixo X</code><br>
+      &nbsp;&nbsp;- <code>x > 0</code> e <code>y > 0</code>: <code>Q1</code><br>
+      &nbsp;&nbsp;- <code>x < 0</code> e <code>y > 0</code>: <code>Q2</code><br>
+      &nbsp;&nbsp;- <code>x < 0</code> e <code>y < 0</code>: <code>Q3</code><br>
+      &nbsp;&nbsp;- <code>x > 0</code> e <code>y < 0</code>: <code>Q4</code><br><br>
+      <b>📤 Saída:</b><br>
+      Imprima o nome do quadrante (<code>Q1</code>, <code>Q2</code>, <code>Q3</code>, <code>Q4</code>), <code>Origem</code>, ou o eixo correspondente (<code>Eixo X</code>, <code>Eixo Y</code>).
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1041</i></p>
-      <h3 align="center">Coordenadas de um Ponto</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains two floating-point values on a single line representing the x and y coordinates of a point in a 2D Cartesian plane.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read the x and y values using <code>map(float, input().split())</code>.<br>
+      • Evaluate the position of the point using conditional statements (<code>if/elif/else</code>):<br>
+      &nbsp;&nbsp;- <code>x == 0</code> and <code>y == 0</code>: <code>Origem</code><br>
+      &nbsp;&nbsp;- <code>x == 0</code> and <code>y ≠ 0</code>: <code>Eixo Y</code><br>
+      &nbsp;&nbsp;- <code>y == 0</code> and <code>x ≠ 0</code>: <code>Eixo X</code><br>
+      &nbsp;&nbsp;- <code>x > 0</code> and <code>y > 0</code>: <code>Q1</code><br>
+      &nbsp;&nbsp;- <code>x < 0</code> and <code>y > 0</code>: <code>Q2</code><br>
+      &nbsp;&nbsp;- <code>x < 0</code> and <code>y < 0</code>: <code>Q3</code><br>
+      &nbsp;&nbsp;- <code>x > 0</code> and <code>y < 0</code>: <code>Q4</code><br><br>
+      <b>📤 Output:</b><br>
+      Print the matching quadrant label (<code>Q1</code>, <code>Q2</code>, <code>Q3</code>, <code>Q4</code>), <code>Origem</code>, or the corresponding axis (<code>Eixo X</code>, <code>Eixo Y</code>).
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Entrada:
-
-- A entrada contém as coordenadas $x$ e $y$ de um ponto em um plano cartesiano, representadas por dois valores de ponto flutuante na mesma linha.
-
-*Exemplo de entrada:*
-```
+```txt
 4.5 -2.2
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Lógica:
-
-- O objetivo é determinar em qual quadrante do plano cartesiano o ponto $(x, y)$ se encontra, ou se ele está sobre um dos eixos ou na origem.
-- As regras de posicionamento são:
-  - **Origem**: $x = 0$ e $y = 0$.
-  - **Eixo X**: o ponto está sobre o eixo horizontal, logo $y = 0$ (e $x \neq 0$).
-  - **Eixo Y**: o ponto está sobre o eixo vertical, logo $x = 0$ (e $y \neq 0$).
-  - **Quadrantes**:
-    - **Q1**: $x > 0$ e $y > 0$ (superior direito).
-    - **Q2**: $x < 0$ e $y > 0$ (superior esquerdo).
-    - **Q3**: $x < 0$ e $y < 0$ (inferior esquerdo).
-    - **Q4**: $x > 0$ e $y < 0$ (inferior direito).
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima o nome do quadrante correspondente (`Q1`, `Q2`, `Q3` ou `Q4`), `Origem` ou sobre qual eixo o ponto se encontra (`Eixo X` ou `Eixo Y`).
-
-*Exemplo de saída:*
-```
+```txt
 Q4
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
-  <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1041</i></p>
-      <h3 align="center">Coordinates of a Point</h3>
-    </td>
-  </tr>
-</table>
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📥 Input:
-
-- The input contains the $x$ and $y$ coordinates of a point in a 2D Cartesian plane, represented by two floating-point values on the same line.
-
-*Example Input:*
-```
-0.1 0.1
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- The goal is to determine which quadrant of the Cartesian plane the point $(x, y)$ belongs to, or whether it lies on one of the axes or at the origin.
-- Position boundaries are defined as:
-  - **Origem (Origin)**: $x = 0$ and $y = 0$.
-  - **Eixo X (X-Axis)**: the point lies on the horizontal axis, meaning $y = 0$ (and $x \neq 0$).
-  - **Eixo Y (Y-Axis)**: the point lies on the vertical axis, meaning $x = 0$ (and $y \neq 0$).
-  - **Quadrants**:
-    - **Q1**: $x > 0$ and $y > 0$ (top-right).
-    - **Q2**: $x < 0$ and $y > 0$ (top-left).
-    - **Q3**: $x < 0$ and $y < 0$ (bottom-left).
-    - **Q4**: $x > 0$ and $y < 0$ (bottom-right).
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the matching quadrant label (`Q1`, `Q2`, `Q3`, or `Q4`), `Origem` or which axis the point is sitting on (`Eixo X` or `Eixo Y`).
-
-*Example Output:*
-```
-Q1
 ```

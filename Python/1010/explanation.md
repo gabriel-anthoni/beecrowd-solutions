@@ -1,127 +1,62 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1010">
+    <img src="https://skillicons.dev/icons?i=python" width="45" alt="Python Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1010</i></p>
-      <h3 align="center">Cálculo Simples</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1010 — Cálculo Simples</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-3-green?style=flat-square" />
+  </p>
 
-#### 📥 Entrada:
-
-- A entrada contém duas linhas de dados. Em cada linha haverá 3 valores: o código de uma peça (inteiro), a quantidade de peças (inteiro) e o valor unitário de cada peça (ponto flutuante).
-
-*Exemplo de entrada:*
-```
-12 1 5.30
-16 2 5.10
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- Leia duas linhas de entrada utilizando `input().split()` para separar os valores por espaço.
-- Converta os códigos e as quantidades de peças para `int()` e os valores unitários para `float()`.
-- Calcule o total a pagar multiplicando a quantidade pelo valor de cada produto e somando os resultados:
-
-$$
-VALOR = (q_1 \cdot p_1) + (q_2 \cdot p_2)
-$$
-
-- utilize f-string para formatar a saída com 2 casas decimais.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- O programa deve exibir o texto `VALOR A PAGAR: R$ ` seguido pelo valor total correspondente a ser pago, com exatamente duas casas decimais.
-
-*Exemplo de saída:*
-```
-VALOR A PAGAR: R$ 15.50
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém duas linhas de dados. Em cada linha haverá 3 valores: o código de uma peça (inteiro), a quantidade de peças (inteiro) e o valor unitário de cada peça (ponto flutuante).<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Leia duas linhas de entrada utilizando <code>input().split()</code> para separar os valores por espaço.<br>
+      • Converta os códigos e as quantidades de peças para <code>int()</code> e os valores unitários para <code>float()</code>.<br>
+      • Calcule o total a pagar multiplicando a quantidade pelo valor de cada produto e somando os resultados: <code>VALOR = (q₁ · p₁) + (q₂ · p₂)</code>.<br>
+      • Utilize f-string para formatar a saída com 2 casas decimais.<br><br>
+      <b>📤 Saída:</b><br>
+      O programa deve exibir o texto <code>VALOR A PAGAR: R$ </code> seguido pelo valor total correspondente a ser pago, com exatamente duas casas decimais.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1010</i></p>
-      <h3 align="center">Simple Calculate</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input file contains two lines of data. In each line, there will be 3 values: a product code (integer), the number of units of the product (integer), and the price for one unit of the product (floating-point).<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read two lines of input using <code>input().split()</code> to separate values by space.<br>
+      • Convert the product codes and product units to <code>int()</code>, and the unit prices to <code>float()</code>.<br>
+      • Calculate the total amount to pay by multiplying the quantity by the price of each product and adding the results: <code>VALOR = (q₁ · p₁) + (q₂ · p₂)</code>.<br>
+      • Use f-string to format the output to 2 decimal places.<br><br>
+      <b>📤 Output:</b><br>
+      The program must display the text <code>VALOR A PAGAR: R$ </code> followed by the total amount to be paid, with exactly two decimal places.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input file contains two lines of data. In each line, there will be 3 values: a product code (integer), the number of units of the product (integer), and the price for one unit of the product (floating-point).
-
-*Example Input:*
-```
+```txt
 12 1 5.30
 16 2 5.10
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read two lines of input using `input().split()` to separate values by space.
-- Convert the product codes and product units to `int()`, and the unit prices to `float()`.
-- Calculate the total amount to pay by multiplying the quantity by the price of each product and adding the results:
-
-$$
-VALOR = (q_1 \cdot p_1) + (q_2 \cdot p_2)
-$$
-
-- use f-string to format the output to 2 decimal places.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- The program must display the text `VALOR A PAGAR: R$ ` followed by the total amount to be paid, with exactly two decimal places.
-
-*Example Output:*
 ```
 VALOR A PAGAR: R$ 15.50
 ```

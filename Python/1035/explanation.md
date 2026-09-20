@@ -1,123 +1,69 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1035">
+    <img src="https://skillicons.dev/icons?i=python" width="45" alt="Python Logo" />
+  </a>
 
-<table>
+  <h3>beecrowd 1035 — Teste de Seleção 1</h3>
+
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-2-green?style=flat-square" />
+  </p>
+
+</div>
+
+---
+
+### 📌 Resumo / Overview
+
+<table align="center" width="100%">
   <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém quatro valores inteiros: A, B, C e D.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Leia os quatro inteiros na mesma linha utilizando <code>input().split()</code>.<br>
+      • Valide simultaneamente com o operador <code>and</code> as cinco condições:<br>
+      &nbsp;&nbsp;1. <code>B > C</code><br>
+      &nbsp;&nbsp;2. <code>D > A</code><br>
+      &nbsp;&nbsp;3. <code>(C + D) > (A + B)</code><br>
+      &nbsp;&nbsp;4. <code>C > 0</code> e <code>D > 0</code><br>
+      &nbsp;&nbsp;5. <code>A % 2 == 0</code> (A é par)<br>
+      • Se todas forem verdadeiras, imprima <code>Valores aceitos</code>; caso contrário, imprima <code>Valores nao aceitos</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima <code>Valores aceitos</code> se todas as condições forem satisfeitas, ou <code>Valores nao aceitos</code> caso contrário.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1035</i></p>
-      <h3 align="center">Teste de Seleção 1</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains four integer values: A, B, C, and D.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read four integer values on a single line using <code>input().split()</code>.<br>
+      • Validate all five conditions simultaneously using the <code>and</code> operator:<br>
+      &nbsp;&nbsp;1. <code>B > C</code><br>
+      &nbsp;&nbsp;2. <code>D > A</code><br>
+      &nbsp;&nbsp;3. <code>(C + D) > (A + B)</code><br>
+      &nbsp;&nbsp;4. <code>C > 0</code> and <code>D > 0</code><br>
+      &nbsp;&nbsp;5. <code>A % 2 == 0</code> (A is even)<br>
+      • If all conditions are met, print <code>Valores aceitos</code>; otherwise, print <code>Valores nao aceitos</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print <code>Valores aceitos</code> if all conditions are met, or <code>Valores nao aceitos</code> otherwise.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Entrada:
-
-- A entrada contém quatro valores inteiros: $A$, $B$, $C$ e $D$.
-
-*Exemplo de entrada:*
-```
+```txt
 5 6 7 8
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Lógica:
-
-- O problema pede para validar uma série de condições matemáticas simultâneas sobre quatro variáveis inteiras ($A$, $B$, $C$, $D$):
-  1. $B > C$ (B maior que C)
-  2. $D > A$ (D maior que A)
-  3. $(C + D) > (A + B)$ (a soma de C e D deve ser maior que a soma de A e B)
-  4. $C > 0$ e $D > 0$ (ambos C e D devem ser valores positivos)
-  5. $A \pmod 2 = 0$ (A deve ser um número par)
-- No Python, conectamos todas essas expressões lógicas utilizando o operador lógico `and`. Se qualquer uma das condições falhar, o fluxo cai no bloco `else`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima `Valores aceitos` se todas as condições forem verdadeiras.
-- Caso contrário, imprima `Valores nao aceitos`.
-
-*Exemplo de saída:*
-```
+```txt
 Valores nao aceitos
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
-  <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1035</i></p>
-      <h3 align="center">Selection Test 1</h3>
-    </td>
-  </tr>
-</table>
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📥 Input:
-
-- The input contains four integer values: $A$, $B$, $C$, and $D$.
-
-*Example Input:*
-```
-2 3 2 6
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- The problem asks us to validate a series of simultaneous mathematical conditions on four integer variables ($A$, $B$, $C$, $D$):
-  1. $B > C$ (B is greater than C)
-  2. $D > A$ (D is greater than A)
-  3. $(C + D) > (A + B)$ (the sum of C and D is greater than the sum of A and B)
-  4. $C > 0$ and $D > 0$ (both C and D must be positive values)
-  5. $A \pmod 2 = 0$ (A must be an even number)
-- In Python, we connect all these logical expressions using the `and` logical operator. If any condition fails, the code falls into the `else` block.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print `Valores aceitos` (Accepted values) if all conditions are met.
-- Otherwise, print `Valores nao aceitos` (Values not accepted).
-
-*Example Output:*
-```
-Valores aceitos
 ```

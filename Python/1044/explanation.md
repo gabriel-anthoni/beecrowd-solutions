@@ -1,115 +1,63 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1044">
+    <img src="https://skillicons.dev/icons?i=python" width="45" alt="Python Logo" />
+  </a>
 
-<table>
+  <h3>beecrowd 1044 — Múltiplos</h3>
+
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-2-green?style=flat-square" />
+  </p>
+
+</div>
+
+---
+
+### 📌 Resumo / Overview
+
+<table align="center" width="100%">
   <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém dois valores inteiros A e B em uma única linha.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Leia os dois inteiros utilizando <code>map(int, input().split())</code>.<br>
+      • Verifique se um é múltiplo do outro avaliando o resto da divisão:<br>
+      &nbsp;&nbsp;<code>A % B == 0 or B % A == 0</code><br>
+      • Se a condição for verdadeira, imprima <code>Sao Multiplos</code>.<br>
+      • Caso contrário, imprima <code>Nao sao Multiplos</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima <code>Sao Multiplos</code> ou <code>Nao sao Multiplos</code> de acordo com o resultado.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1044</i></p>
-      <h3 align="center">Múltiplos</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains two integer values, A and B, on a single line.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read the two integers using <code>map(int, input().split())</code>.<br>
+      • Check whether one is a multiple of the other using the modulo operator:<br>
+      &nbsp;&nbsp;<code>A % B == 0 or B % A == 0</code><br>
+      • If true, print <code>Sao Multiplos</code>.<br>
+      • Otherwise, print <code>Nao sao Multiplos</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print <code>Sao Multiplos</code> or <code>Nao sao Multiplos</code> depending on the evaluation result.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Entrada:
-
-- A entrada contém dois valores inteiros $A$ e $B$ na mesma linha.
-
-*Exemplo de entrada:*
-```
+```txt
 6 24
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Lógica:
-
-- Dois números são múltiplos entre si se o maior deles for divisível pelo menor sem deixar resto (resto igual a zero).
-- Matematicamente, dizemos que $A$ e $B$ são múltiplos se:
-  $$A \pmod B = 0 \quad \text{ou} \quad B \pmod A = 0$$
-- Em termos de código, podemos simplesmente verificar se o resto da divisão do maior pelo menor é $0$, ou testar diretamente se $A$ é divisível por $B$ ou vice-versa.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Deve-se imprimir a mensagem `"Sao Multiplos"` ou `"Nao sao Multiplos"` (atente-se para a falta de acentos nas mensagens, conforme exigido pelo Beecrowd).
-
-*Exemplo de saída:*
 ```
 Sao Multiplos
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
-  <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1044</i></p>
-      <h3 align="center">Multiples</h3>
-    </td>
-  </tr>
-</table>
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📥 Input:
-
-- The input contains two integer values, $A$ and $B$, on a single line.
-
-*Example Input:*
-```
-6 25
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Two numbers are multiples of each other if the larger number is perfectly divisible by the smaller one with a remainder of zero.
-- Mathematically, we say $A$ and $B$ are multiples if:
-  $$A \pmod B = 0 \quad \text{or} \quad B \pmod A = 0$$
-- Code-wise, we can either check if the remainder of dividing the maximum value by the minimum value is $0$, or check if either $A \% B == 0$ or $B \% A == 0$.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the message `"Sao Multiplos"` or `"Nao sao Multiplos"`. Note that the output strings on Beecrowd do not contain Portuguese accentuation marks.
-
-*Example Output:*
-```
-Nao sao Multiplos
 ```

@@ -1,127 +1,67 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1047">
+    <img src="https://skillicons.dev/icons?i=python" width="45" alt="Python Logo" />
+  </a>
 
-<table>
+  <h3>beecrowd 1047 — Tempo de Jogo com Minutos</h3>
+
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-9-green?style=flat-square" />
+  </p>
+
+</div>
+
+---
+
+### 📌 Resumo / Overview
+
+<table align="center" width="100%">
   <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém quatro valores inteiros na mesma linha: hora inicial, minuto inicial, hora final e minuto final de um jogo.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Leia os quatro valores usando <code>map(int, input().split())</code>.<br>
+      • Converta o horário inicial e o final inteiramente para minutos desde a meia-noite:<br>
+      &nbsp;&nbsp;<code>Início = HoraInicial · 60 + MinutoInicial</code><br>
+      &nbsp;&nbsp;<code>Fim = HoraFinal · 60 + MinutoFinal</code><br>
+      • Calcule a diferença em minutos: <code>Δt = Fim - Início</code>.<br>
+      • Se <code>Δt ≤ 0</code>, significa que o jogo durou até o dia seguinte (ou durou 24h exatas). Adicione 1440 minutos (24 horas) ao resultado: <code>Δt = Δt + 1440</code>.<br>
+      • Converta de volta para horas e minutos usando <code>Horas = Δt // 60</code> e <code>Minutos = Δt % 60</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima a duração do jogo no formato <code>O JOGO DUROU X HORA(S) E Y MINUTO(S)</code>.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1047</i></p>
-      <h3 align="center">Tempo de Jogo com Minutos</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains four integer values on a single line: start hour, start minute, end hour, and end minute of a game.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read the four values using <code>map(int, input().split())</code>.<br>
+      • Convert start and end times entirely into total minutes past midnight:<br>
+      &nbsp;&nbsp;<code>Start = StartHour · 60 + StartMinute</code><br>
+      &nbsp;&nbsp;<code>End = EndHour · 60 + EndMinute</code><br>
+      • Calculate total elapsed minutes: <code>Δt = End - Start</code>.<br>
+      • If <code>Δt ≤ 0</code>, the game crossed midnight (or lasted exactly 24 hours). Add 1440 minutes (24 hours) to <code>Δt</code>: <code>Δt = Δt + 1440</code>.<br>
+      • Extract hours and minutes using integer division and modulo: <code>Hours = Δt // 60</code> and <code>Minutes = Δt % 60</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print the duration formatted as <code>O JOGO DUROU X HORA(S) E Y MINUTO(S)</code>.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Entrada:
-
-- A entrada contém quatro valores inteiros na mesma linha: a hora inicial, o minuto inicial, a hora final e o minuto final de um jogo.
-
-*Exemplo de entrada:*
-```
+```txt
 7 8 9 10
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Lógica:
-
-- Calcular a duração exata envolvendo horas e minutos pode gerar muitas árvores de decisão condicionais (`if/else`) para tratar os empréstimos de minutos e viradas de dia.
-- A estratégia matemática mais limpa e elegante é **transformar todo o tempo em minutos** desde o início do dia:
-  $$\text{Tempo Inicial (minutos)} = (\text{Hora Inicial} \times 60) + \text{Minuto Inicial}$$
-  $$\text{Tempo Final (minutos)} = (\text{Hora Final} \times 60) + \text{Minuto Final}$$
-- A duração total inicial será a diferença:
-  $$\Delta t = \text{Tempo Final} - \text{Tempo Inicial}$$
-- Como o jogo dura no mínimo $1$ minuto e no máximo $24$ horas ($1440$ minutos), se o resultado de $\Delta t$ for menor ou igual a zero, significa que o jogo terminou no dia seguinte. Portanto, basta somar $1440$ minutos ao total.
-- Por fim, convertemos de volta para horas e minutos usando divisão inteira (`//`) e o operador de resto (`%`):
-  $$\text{Horas} = \Delta t // 60$$
-  $$\text{Minutos} = \Delta t \pmod{60}$$
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima a mensagem de duração no formato exato: `"O JOGO DUROU X HORA(S) E Y MINUTO(S)"`.
-
-*Exemplo de saída:*
 ```
 O JOGO DUROU 2 HORA(S) E 2 MINUTO(S)
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
-  <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1047</i></p>
-      <h3 align="center">Game Time with Minutes</h3>
-    </td>
-  </tr>
-</table>
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📥 Input:
-
-- The input contains four integer values on a single line: starting hour, starting minute, ending hour, and ending minute of a game.
-
-*Example Input:*
-```
-7 10 8 9
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Calculating precise durations involving hours and minutes concurrently often leads to complex nested conditional structures to handle minute borrowing and overnight transitions.
-- The cleanest mathematical approach is to **convert all time inputs entirely into minutes** past midnight:
-  $$\text{Start Time (minutes)} = (\text{Start Hour} \times 60) + \text{Start Minute}$$
-  $$\text{End Time (minutes)} = (\text{End Hour} \times 60) + \text{End Minute}$$
-- The preliminary duration is simply the difference:
-  $$\Delta t = \text{End Time} - \text{Start Time}$$
-- Given that the game must last at least $1$ minute and at most $24$ hours ($1440$ minutes), if $\Delta t$ is less than or equal to zero, it means the game wrapped up on the following day. We handle this effortlessly by adding $1440$ minutes to our duration.
-- Finally, we extract the hours and minutes back from the total runtime using integer division (`//`) and the modulo operator (`%`):
-  $$\text{Hours} = \Delta t // 60$$
-  $$\text{Minutes} = \Delta t \pmod{60}$$
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the game duration matching the strict template: `"O JOGO DUROU X HORA(S) E Y MINUTO(S)"`.
-
-*Example Output:*
-```
-O JOGO DUROU 0 HORA(S) E 59 MINUTO(S)
 ```

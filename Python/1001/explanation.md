@@ -1,115 +1,60 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1001">
+    <img src="https://skillicons.dev/icons?i=python" width="45" alt="Python Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1001</i></p>
-      <h3 align="center">Extremamente Básico</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1001 — Extremamente Básico</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-4-green?style=flat-square" />
+  </p>
 
-#### 📥 Entrada:
-
-- A entrada contém 2 valores inteiros.
-
-*Exemplo de entrada:*
-```
-10
-9
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- Leia os dois valores inteiros usando a função `input()` convertida para `int()`.
-- Some os dois valores e armazene o resultado na variável `x`.
-- Exiba o resultado final utilizando a formatação correta para incluir o texto `X =` antes do valor.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- O programa deve exibir o texto `X = ` (com um espaço em branco antes e depois da igualdade) seguido pelo valor da variável `x`.
-
-*Exemplo de saída:*
-```
-X = 19
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém 2 valores inteiros.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Leia os dois valores inteiros usando a função <code>input()</code> convertida para <code>int()</code>.<br>
+      • Some os dois valores e armazene o resultado na variável <code>x</code>.<br>
+      • Exiba o resultado final utilizando a formatação correta para incluir o texto <code>X =</code> antes do valor.<br><br>
+      <b>📤 Saída:</b><br>
+      O programa deve exibir o texto <code>X = </code> (com um espaço em branco antes e depois da igualdade) seguido pelo valor da variável <code>x</code>.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1001</i></p>
-      <h3 align="center">Extremely Basic</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains 2 integer values.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read the two integer values using the <code>input()</code> function converted to <code>int()</code>.<br>
+      • Sum both values and store the result in the variable <code>x</code>.<br>
+      • Print the final result using the correct formatting to include the text <code>X =</code> before the value.<br><br>
+      <b>📤 Output:</b><br>
+      The program must display the text <code>X = </code> (with a blank space before and after the equal sign) followed by the value of the variable <code>x</code>.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input contains 2 integer values.
-
-*Example Input:*
-```
+```txt
 10
 9
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read the two integer values using the `input()` function converted to `int()`.
-- Sum both values and store the result in the variable `x`.
-- Print the final result using the correct formatting to include the text `X =` before the value.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- The program must display the text `X = ` (with a blank space before and after the equal sign) followed by the value of the variable `x`.
-
-*Example Output:*
-```
+```txt
 X = 19
 ```

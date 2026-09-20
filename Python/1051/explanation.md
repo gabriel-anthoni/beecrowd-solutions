@@ -1,121 +1,67 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1051">
+    <img src="https://skillicons.dev/icons?i=python" width="45" alt="Python Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1051</i></p>
-      <h3 align="center">Imposto de Renda</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1051 — Imposto de Renda</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-2-green?style=flat-square" />
+  </p>
 
-#### 📥 Entrada:
-
-- A entrada contém um valor de ponto flutuante com duas casas decimais, representando o salário de uma pessoa.
-
-*Exemplo de entrada:*
-```
-3002.00
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- Leia o valor do salário como um número de ponto flutuante (`float`).
-- Verifique progressivamente em qual faixa de imposto o salário se enquadra:
-  - Salários até R$ 2000,00 são **Isentos** de imposto (`imposto = 0`).
-  - De R$ 2000,01 até R$ 3000,00: aplica-se 8% sobre o valor que excede R$ 2000,00.
-  - De R$ 3000,01 até R$ 4500,00: aplica-se 18% sobre o valor que excede R$ 3000,00, somado à taxa fixa máxima acumulada da faixa anterior (R$ 80,00).
-  - Acima de R$ 4500,00: aplica-se 28% sobre o valor que excede R$ 4500,00, somado à taxa fixa máxima acumulada das faixas anteriores (R$ 80,00 + R$ 270,00 = R$ 350,00).
-- Se o imposto total for 0, exiba a mensagem `"Isento"`. Caso contrário, exiba o resultado no formato `R$ XX.XX`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima a mensagem `"Isento"` ou o valor do imposto devido com duas casas decimais após a vírgula/ponto, precedido de `R$ `.
-
-*Exemplo de saída:*
-```
-R$ 80.36
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=python"></p>
-      <p align="center"><code>Python 3.11</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém um valor de ponto flutuante com duas casas decimais, representando o salário de uma pessoa.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Leia o salário com <code>float(input())</code>.<br>
+      • Verifique a faixa de tributação progressiva usando condicionais (<code>if/elif/else</code>):<br>
+      &nbsp;&nbsp;- <code>Salário ≤ 2000.00</code>: <b>Isento</b><br>
+      &nbsp;&nbsp;- <code>2000.01 ≤ Salário ≤ 3000.00</code>: 8% sobre a quantia acima de R$ 2000.00<br>
+      &nbsp;&nbsp;- <code>3000.01 ≤ Salário ≤ 4500.00</code>: 18% sobre a quantia acima de R$ 3000.00 + R$ 80.00 fixos<br>
+      &nbsp;&nbsp;- <code>Salário > 4500.00</code>: 28% sobre a quantia acima de R$ 4500.00 + R$ 350.00 fixos<br>
+      • Se for isento, exiba <code>Isento</code>; caso contrário, exiba o imposto formatado como <code>R$ XX.XX</code> com duas casas decimais.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima <code>Isento</code> ou o valor do imposto devido no formato <code>R$ XX.XX</code>.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1051</i></p>
-      <h3 align="center">Taxes</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains a single floating-point number with two decimal places representing a salary.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read the salary using <code>float(input())</code>.<br>
+      • Determine progressive tax brackets using conditionals (<code>if/elif/else</code>):<br>
+      &nbsp;&nbsp;- <code>Salary ≤ 2000.00</code>: <b>Tax-free</b><br>
+      &nbsp;&nbsp;- <code>2000.01 ≤ Salary ≤ 3000.00</code>: 8% on amount exceeding R$ 2000.00<br>
+      &nbsp;&nbsp;- <code>3000.01 ≤ Salary ≤ 4500.00</code>: 18% on amount exceeding R$ 3000.00 + R$ 80.00 fixed<br>
+      &nbsp;&nbsp;- <code>Salary > 4500.00</code>: 28% on amount exceeding R$ 4500.00 + R$ 350.00 fixed<br>
+      • If tax-free, print <code>Isento</code>; otherwise, print total tax formatted as <code>R$ XX.XX</code> with 2 decimal places.<br><br>
+      <b>📤 Output:</b><br>
+      Print <code>Isento</code> or the total calculated tax formatted as <code>R$ XX.XX</code>.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input contains a floating-point number with two decimal places, representing a salary.
-
-*Example Input:*
-```
+```txt
 3002.00
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read the income value as a floating-point number (`float`).
-- Check progressively which tax bracket the income falls into:
-  - Salaries up to R$ 2000.00 are **Tax-free** (`tax = 0`).
-  - From R$ 2000.01 to R$ 3000.00: apply an 8% tax on the amount exceeding R$ 2000.00.
-  - From R$ 3000.01 to R$ 4500.00: apply an 18% tax on the amount exceeding R$ 3000.00, plus the accumulated maximum tax from the lower bracket (R$ 80.00).
-  - Above R$ 4500.00: apply a 28% tax on the amount exceeding R$ 4500.00, plus the accumulated maximum tax from lower brackets (R$ 80.00 + R$ 270.00 = R$ 350.00).
-- If the total tax is 0, display `"Isento"`. Otherwise, print the formatted result as `R$ XX.XX`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print `"Isento"` if tax is zero, or the total tax due formatted to two decimal places, preceded by `R$ `.
-
-*Example Output:*
 ```
 R$ 80.36
 ```
