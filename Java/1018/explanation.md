@@ -1,126 +1,63 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1018">
+    <img src="https://skillicons.dev/icons?i=java" width="45" alt="Java Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1018</i></p>
-      <h3 align="center">Cédulas</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1018 — Cédulas</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Java_19-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-4-orange?style=flat-square"/>
+  </p>
 
-#### 📥 Entrada:
-
-- A entrada contém um valor inteiro $N$ ($0 < N < 1000000$).
-
-*Exemplo de entrada:*
-```
-576
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- Defina uma lista/vetor com os valores das cédulas possíveis: `[100, 50, 20, 10, 5, 2, 1]`.
-- Imprima o valor lido originalmente (requisito do problema).
-- Itere sobre a lista de cédulas. Para cada cédula:
-  - Calcule a quantidade de notas necessárias utilizando a divisão `/`.
-  - Exiba o resultado formatado com `%d`.
-  - Atualize o valor restante a ser computado utilizando o operador de resto `%`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima o valor lido e, em seguida, a quantidade mínima de notas de cada tipo necessárias no formato `X nota(s) de R$ Y,00`.
-
-*Exemplo de saída:*
-```
-576
-5 nota(s) de R$ 100,00
-1 nota(s) de R$ 50,00
-1 nota(s) de R$ 20,00
-0 nota(s) de R$ 10,00
-1 nota(s) de R$ 5,00
-0 nota(s) de R$ 2,00
-1 nota(s) de R$ 1,00
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém um valor inteiro <code>N</code> (<code>0 &lt; N &lt; 1000000</code>).<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Ler o valor inteiro <code>N</code>.<br>
+      • Imprimir o valor lido originalmente.<br>
+      • Definir o vetor de cédulas: <code>[100, 50, 20, 10, 5, 2, 1]</code>.<br>
+      • Para cada cédula, calcular a quantidade de notas necessárias usando a divisão inteira (<code>/</code>) e atualizar o valor restante com o operador de resto (<code>%</code>).<br>
+      • Exibir o resultado formatado no padrão <code>X nota(s) de R$ Y,00</code> com quebra de linha <code>\n</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima o valor lido e a quantidade mínima de notas de cada tipo necessárias.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1018</i></p>
-      <h3 align="center">Banknotes</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input file contains an integer value <code>N</code> (<code>0 &lt; N &lt; 1000000</code>).<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read the integer value <code>N</code>.<br>
+      • Print the original read value.<br>
+      • Define the array of available banknotes: <code>[100, 50, 20, 10, 5, 2, 1]</code>.<br>
+      • For each banknote, calculate the required quantity using integer division (<code>/</code>) and update the remaining balance using modulo (<code>%</code>).<br>
+      • Output each line formatted as <code>X nota(s) de R$ Y,00</code> with an end-of-line break <code>\n</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print the read number and the minimum number of each necessary banknote.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input file contains an integer value $N$ ($0 < N < 1000000$).
-
-*Example Input:*
-```
+```txt
 576
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Define an array with the possible banknote values: `[100, 50, 20, 10, 5, 2, 1]`.
-- Print the original read value (problem requirement).
-- Iterate over the banknote array. For each banknote:
-  - Calculate the required quantity of notes using integer division `/`.
-  - Output the formatted string using `%d`.
-  - Update the remaining amount to be computed using the modulo operator `%`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the read number and the minimum number of each necessary banknote in the format `X nota(s) de R$ Y,00`.
-
-*Example Output:*
 ```
 576
 5 nota(s) de R$ 100,00

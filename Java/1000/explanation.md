@@ -1,103 +1,53 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="[https://judge.beecrowd.com/pt/problems/view/1000](https://judge.beecrowd.com/pt/problems/view/1000)">
+    <img src="https://skillicons.dev/icons?i=java" width="45" alt="Java Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1000</i></p>
-      <h3 align="center">Hello World!</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1000 — Hello World!</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Java_19-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-5-orange?style=flat-square"/>
+  </p>
 
-#### 📥 Entrada:
-
-- Este problema não possui nenhuma entrada de dados.
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- É o primeiro problema clássico de qualquer jornada em programação.
-- O objetivo é validar o ambiente de execução e garantir que o fluxo de compilação, execução e formatação da saída do Beecrowd esteja funcionando perfeitamente.
-- Basta enviar a mensagem literal `"Hello World!"` para o fluxo padrão de saída (`System.out.println`), garantindo que haja a quebra de linha ao final para evitar o erro de formatação (*Presentation Error*).
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima exatamente a mensagem `"Hello World!"` seguida por uma quebra de linha.
-
-*Exemplo de saída:*
-```
-Hello World!
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      Este problema não possui nenhuma entrada de dados.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • É o primeiro problema clássico de qualquer jornada em programação.<br>
+      • O objetivo é validar o ambiente de execução e garantir que o fluxo de compilação, execução e formatação da saída do Beecrowd esteja funcionando perfeitamente.<br>
+      • Basta enviar a mensagem literal <code>Hello World!</code> para o fluxo padrão de saída (<code>System.out.println</code>), garantindo que haja a quebra de linha ao final para evitar o erro de formatação (<i>Presentation Error</i>).<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima exatamente a mensagem <code>Hello World!</code> seguida por uma quebra de linha.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1000</i></p>
-      <h3 align="center">Hello World!</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      This problem does not receive any input data.<br><br>
+      <b>🧠 Logic:</b><br>
+      • The iconic entry point for any coding journey.<br>
+      • Its main goal is to verify that your Java environment, compilation process, and output streams match the target judge requirements.<br>
+      • You simply push the exact literal string <code>Hello World!</code> to standard output (<code>System.out.println</code>), ensuring a newline character completes the line to avoid <i>Presentation Error</i>.<br><br>
+      <b>📤 Output:</b><br>
+      Print the exact message <code>Hello World!</code> followed by an end-of-line break.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📤 Exemplo de Saída / Example Output
 
-#### 📥 Input:
-
-- This problem does not receive any input data.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- The iconic entry point for any coding journey.
-- Its main goal is to verify that your Java environment, compilation process, and output streams match the target judge requirements.
-- You simply push the exact literal string `"Hello World!"` to standard output (`System.out.println`), ensuring a newline character completes the line to avoid *Presentation Error*.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the exact message `"Hello World!"` followed by an end-of-line break.
-
-*Example Output:*
-```
+```txt
 Hello World!
 ```

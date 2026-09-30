@@ -1,115 +1,61 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1011">
+    <img src="https://skillicons.dev/icons?i=java" width="45" alt="Java Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1011</i></p>
-      <h3 align="center">Esfera</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1011 — Esfera</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Java_19-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-2-orange?style=flat-square"/>
+  </p>
 
-#### 📥 Entrada:
-
-- A entrada contém um valor de ponto flutuante (`double`), correspondente ao raio de uma esfera.
-
-*Exemplo de entrada:*
-```
-3
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- Ler o valor do raio $R$ (`double`) da entrada padrão utilizando o `Scanner`.
-- Calcular o volume da esfera utilizando a fórmula fornecida:
-  $$\text{VOLUME} = \left(\frac{4.0}{3.0}\right) \times 3.14159 \times R^3$$
-- Exibir a mensagem `VOLUME = ` seguida pelo resultado formatado com **3 casas decimais** utilizando `System.out.printf()` e encerrar com a quebra de linha `\n`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima a mensagem `VOLUME = ` seguida pelo valor do volume da esfera formatado com 3 casas decimais.
-
-*Exemplo de saída:*
-```
-VOLUME = 113.097
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém um valor de ponto flutuante (<code>double</code>), correspondente ao raio de uma esfera.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Ler o valor do raio <code>R</code> (<code>double</code>) da entrada padrão utilizando o <code>Scanner</code>.<br>
+      • Calcular o volume da esfera utilizando a fórmula fornecida:<br>
+      <code>VOLUME = (4.0 / 3.0) * 3.14159 * R³</code><br>
+      • Exibir a mensagem <code>VOLUME = </code> seguida pelo resultado formatado com <b>3 casas decimais</b> utilizando <code>System.out.printf()</code> e encerrar com a quebra de linha <code>\n</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima a mensagem <code>VOLUME = </code> seguida pelo valor do volume da esfera formatado com 3 casas decimais.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1011</i></p>
-      <h3 align="center">Sphere</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains a floating-point value (<code>double</code>), representing the radius of a sphere.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read the radius <code>R</code> (<code>double</code>) from standard input using <code>Scanner</code>.<br>
+      • Calculate the sphere's volume using the given formula:<br>
+      <code>VOLUME = (4.0 / 3.0) * 3.14159 * R³</code><br>
+      • Output the message <code>VOLUME = </code> followed by the result formatted to <b>3 decimal places</b> using <code>System.out.printf()</code> and an end-of-line break <code>\n</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print the message <code>VOLUME = </code> followed by the calculated volume with 3 decimal places.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input contains a floating-point value (`double`), representing the radius of a sphere.
-
-*Example Input:*
-```
+```txt
 3
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read the radius $R$ (`double`) from standard input using `Scanner`.
-- Calculate the sphere's volume using the given formula:
-  $$\text{VOLUME} = \left(\frac{4.0}{3.0}\right) \times 3.14159 \times R^3$$
-- Output the message `VOLUME = ` followed by the result formatted to **3 decimal places** using `System.out.printf()` and an end-of-line break `\n`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the message `VOLUME = ` followed by the calculated volume with 3 decimal places.
-
-*Example Output:*
-```
+```txt
 VOLUME = 113.097
 ```

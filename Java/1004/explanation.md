@@ -1,115 +1,60 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1004">
+    <img src="https://skillicons.dev/icons?i=java" width="45" alt="Java Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1004</i></p>
-      <h3 align="center">Produto Simples</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1004 — Produto Simples</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Java_19-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-1-orange?style=flat-square"/>
+  </p>
 
-#### 📥 Entrada:
-
-- A entrada contém dois valores inteiros.
-
-*Exemplo de entrada:*
-```
-3
-9
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- Ler dois valores inteiros da entrada padrão e armazená-los nas variáveis `A` e `B`.
-- Calcular o produto da multiplicação entre os dois inteiros: $PROD = A \times B$.
-- Imprimir o resultado seguindo a formatação exigida pelo juiz online: a palavra `PROD` em maiúsculas, com um espaço antes e depois do sinal de igual, seguida pelo resultado da multiplicação e uma quebra de linha `\n` ao final.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima a mensagem `PROD = ` seguida pelo valor da variável `PROD` e uma quebra de linha.
-
-*Exemplo de saída:*
-```
-PROD = 27
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém dois valores inteiros.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Ler dois valores inteiros da entrada padrão e armazená-los nas variáveis <code>A</code> e <code>B</code>.<br>
+      • Calcular o produto da multiplicação entre os dois inteiros: <code>PROD = A * B</code>.<br>
+      • Imprimir o resultado seguindo a formatação exigida pelo juiz online: a palavra <code>PROD</code> em maiúsculas, com um espaço antes e depois do sinal de igual, seguida pelo resultado da multiplicação e uma quebra de linha <code>\n</code> ao final.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima a mensagem <code>PROD = </code> seguida pelo valor da variável <code>PROD</code> e uma quebra de linha.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1004</i></p>
-      <h3 align="center">Simple Product</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains two integer numbers.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read two integer values from standard input and store them in variables <code>A</code> and <code>B</code>.<br>
+      • Calculate the product of multiplying both integers: <code>PROD = A * B</code>.<br>
+      • Output the result using the exact format required by the online judge: uppercase <code>PROD</code>, with a space before and after the equals sign, followed by the multiplication result and an end-of-line break <code>\n</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print the message <code>PROD = </code> followed by the value of variable <code>PROD</code> and a newline.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input contains two integer numbers.
-
-*Example Input:*
-```
+```txt
 3
 9
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read two integer values from standard input and store them in variables `A` and `B`.
-- Calculate the product of multiplying both integers: $PROD = A \times B$.
-- Output the result using the exact format required by the online judge: uppercase `PROD`, with a space before and after the equals sign, followed by the multiplication result and an end-of-line break `\n`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the message `PROD = ` followed by the value of variable `PROD` and a newline.
-
-*Example Output:*
-```
+```txt
 PROD = 27
 ```
