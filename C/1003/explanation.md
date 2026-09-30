@@ -1,115 +1,62 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1003">
+    <img src="https://skillicons.dev/icons?i=c" width="45" alt="C Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=c"></p>
-      <p align="center"><code>C99</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1003</i></p>
-      <h3 align="center">Soma Simples</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1003 — Soma Simples</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-C99-A8B9CC?style=flat-square&logo=c&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-1-blue?style=flat-square"/>
+  </p>
 
-#### 📥 Entrada:
-
-- A entrada contém dois valores inteiros.
-
-*Exemplo de entrada:*
-```
-30
-10
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- Leia dois valores inteiros através da função `scanf` e armazene-os nas variáveis `A` e `B`.
-- Calcule a soma dos dois valores e atribua o resultado à variável `SOMA`.
-- Imprima o resultado no formato `SOMA = X`, onde `X` é o valor da soma, lembrando da quebra de linha `\n` ao final.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima a mensagem `"SOMA = "` seguida do valor da variável `SOMA` e de uma quebra de linha.
-
-*Exemplo de saída:*
-```
-SOMA = 40
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=c"></p>
-      <p align="center"><code>C99</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém dois valores inteiros.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Ler dois valores inteiros com <code>scanf()</code> nas variáveis <code>A</code> e <code>B</code>.<br>
+      • Calcular a soma dos dois valores e atribuir a <code>SOMA</code>:<br>
+      <code>SOMA = A + B</code><br>
+      • Exibir o resultado formatado no padrão <code>SOMA = X</code> com quebra de linha <code>\n</code> utilizando <code>printf()</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima a mensagem <code>SOMA = </code> seguida do valor da variável <code>SOMA</code> e de uma quebra de linha.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1003</i></p>
-      <h3 align="center">Simple Sum</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input file contains two integer values.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read two integer values using <code>scanf()</code> into variables <code>A</code> and <code>B</code>.<br>
+      • Calculate the sum of the two values and assign to <code>SOMA</code>:<br>
+      <code>SOMA = A + B</code><br>
+      • Output the result formatted as <code>SOMA = X</code> with a newline <code>\n</code> using <code>printf()</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print the message <code>SOMA = </code> followed by the sum value and a newline character.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input file contains two integer values.
-
-*Example Input:*
-```
+```txt
 30
 10
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read two integer values using `scanf` and store them in variables `A` and `B`.
-- Calculate the sum of the two values and assign the result to the variable `SOMA`.
-- Print the result formatted as `SOMA = X`, where `X` represents the sum, including a newline `\n` at the end.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the message `"SOMA = "` followed by the sum value and a newline character.
-
-*Example Output:*
-```
+```txt
 SOMA = 40
 ```

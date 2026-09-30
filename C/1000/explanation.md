@@ -1,103 +1,53 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1000">
+    <img src="https://skillicons.dev/icons?i=c" width="45" alt="C Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=c"></p>
-      <p align="center"><code>C99</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1000</i></p>
-      <h3 align="center">Hello World!</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1000 — Hello World!</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-C99-A8B9CC?style=flat-square&logo=c&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-5-blue?style=flat-square"/>
+  </p>
 
-#### 📥 Entrada:
-
-- Este problema não possui nenhuma entrada de dados.
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- O objetivo deste problema inicial é exibir o texto padrão na tela.
-- Utilize a função `printf` para imprimir a mensagem exata `"Hello World!"`.
-- Não se esqueça de incluir o caractere de quebra de linha `\n` ao final do texto dentro do `printf`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima a mensagem `"Hello World!"`.
-
-*Exemplo de saída:*
-```
-Hello World!
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=c"></p>
-      <p align="center"><code>C99</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      Este problema não possui nenhuma entrada de dados.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • O objetivo deste problema inicial é exibir o texto padrão na tela.<br>
+      • Utilize a função <code>printf</code> para imprimir a mensagem exata <code>Hello World!</code>.<br>
+      • Inclua o caractere de quebra de linha <code>\n</code> ao final do texto dentro do <code>printf</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima a mensagem <code>Hello World!</code> com quebra de linha.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1000</i></p>
-      <h3 align="center">Hello World!</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      This problem has no input.<br><br>
+      <b>🧠 Logic:</b><br>
+      • The goal of this initial problem is to display standard text on the screen.<br>
+      • Use the <code>printf</code> function to output the exact message <code>Hello World!</code>.<br>
+      • Include the newline character <code>\n</code> inside <code>printf</code> at the end of the string.<br><br>
+      <b>📤 Output:</b><br>
+      Print the message <code>Hello World!</code> with a newline.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📤 Exemplo de Saída / Example Output
 
-#### 📥 Input:
-
-- This problem has no input.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- The goal of this initial problem is to display standard text on the screen.
-- Use the `printf` function to output the exact message `"Hello World!"`.
-- Always include the newline character `\n` inside `printf` at the end of the string.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the message `"Hello World!"`.
-
-*Example Output:*
-```
+```txt
 Hello World!
 ```
