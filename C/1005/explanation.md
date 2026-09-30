@@ -1,117 +1,62 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1005">
+    <img src="https://skillicons.dev/icons?i=c" width="45" alt="C Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=c"></p>
-      <p align="center"><code>C99</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1005</i></p>
-      <h3 align="center">Média 1</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1005 — Média 1</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-C99-A8B9CC?style=flat-square&logo=c&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-2-blue?style=flat-square"/>
+  </p>
 
-#### 📥 Entrada:
-
-- A entrada contém dois valores de ponto flutuante de dupla precisão (`double`).
-
-*Exemplo de entrada:*
-```
-5.0
-7.1
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- Leia dois valores de ponto flutuante (`double`) através da função `scanf` e armazene-os nas variáveis `a` e `b`.
-- Calcule a média ponderada sabendo que a primeira nota tem peso 3.5 e a segunda nota tem peso 7.5 (soma dos pesos = 11):
-  $$\text{MEDIA} = \frac{(a \times 3.5) + (b \times 7.5)}{11}$$
-- Imprima o resultado formatado com 5 casas decimais no padrão `MEDIA = X.XXXXX`, garantindo a quebra de linha `\n` ao final.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima a mensagem `"MEDIA = "` seguida do valor da variável `media` com 5 casas após o ponto decimal e de uma quebra de linha.
-
-*Exemplo de saída:*
-```
-MEDIA = 6.43182
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=c"></p>
-      <p align="center"><code>C99</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém dois valores de ponto flutuante de dupla precisão (<code>double</code>).<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Ler dois valores de ponto flutuante (<code>double</code>) com <code>scanf()</code> nas variáveis <code>a</code> e <code>b</code>.<br>
+      • Calcular a média ponderada com pesos 3.5 e 7.5 (soma dos pesos = 11):<br>
+      <code>MEDIA = ((a * 3.5) + (b * 7.5)) / 11.0</code><br>
+      • Exibir o resultado formatado no padrão <code>MEDIA = X.XXXXX</code> com 5 casas decimais e quebra de linha <code>\n</code> utilizando <code>printf()</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima a mensagem <code>MEDIA = </code> seguida do valor da variável <code>MEDIA</code> com 5 casas após o ponto decimal e de uma quebra de linha.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1005</i></p>
-      <h3 align="center">Average 1</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input file contains two double-precision floating-point values (<code>double</code>).<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read two double-precision floating-point numbers (<code>double</code>) using <code>scanf()</code> into variables <code>a</code> and <code>b</code>.<br>
+      • Calculate the weighted average with weights 3.5 and 7.5 (total weight = 11):<br>
+      <code>MEDIA = ((a * 3.5) + (b * 7.5)) / 11.0</code><br>
+      • Output the result formatted as <code>MEDIA = X.XXXXX</code> with 5 decimal places and a newline <code>\n</code> using <code>printf()</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print the message <code>MEDIA = </code> followed by the calculated average formatted to 5 decimal places and a newline character.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input file contains two double-precision floating-point values (`double`).
-
-*Example Input:*
-```
+```txt
 5.0
 7.1
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read two double-precision floating-point numbers (`double`) using `scanf` and store them in variables `a` and `b`.
-- Calculate the weighted average considering that the first grade has a weight of 3.5 and the second grade has a weight of 7.5 (total weight = 11):
-  $$\text{MEDIA} = \frac{(a \times 3.5) + (b \times 7.5)}{11}$$
-- Print the result formatted with 5 decimal places as `MEDIA = X.XXXXX`, including a newline `\n` at the end.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the message `"MEDIA = "` followed by the calculated average formatted to 5 decimal places and a newline character.
-
-*Example Output:*
-```
+```txt
 MEDIA = 6.43182
 ```

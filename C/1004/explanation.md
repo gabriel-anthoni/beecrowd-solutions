@@ -1,117 +1,62 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1004">
+    <img src="https://skillicons.dev/icons?i=c" width="45" alt="C Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=c"></p>
-      <p align="center"><code>C99</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1004</i></p>
-      <h3 align="center">Produto Simples</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1004 — Produto Simples</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-C99-A8B9CC?style=flat-square&logo=c&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-1-blue?style=flat-square"/>
+  </p>
 
-#### 📥 Entrada:
-
-- A entrada contém dois valores inteiros.
-
-*Exemplo de entrada:*
-```
-30
-10
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- Leia dois valores inteiros através da função `scanf` e armazene-os nas variáveis `a` e `b`.
-- Calcule o produto entre os dois valores utilizando a fórmula:
-  $$PROD = a \times b$$
-- Imprima o resultado no formato `PROD = X`, onde `X` representa o valor calculado, garantindo a quebra de linha `\n` ao final.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima a mensagem `"PROD = "` seguida do valor da variável `prod` e de uma quebra de linha.
-
-*Exemplo de saída:*
-```
-PROD = 300
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=c"></p>
-      <p align="center"><code>C99</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém dois valores inteiros.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Ler dois valores inteiros com <code>scanf()</code> nas variáveis <code>a</code> e <code>b</code>.<br>
+      • Calcular o produto entre os dois valores e atribuir a <code>PROD</code>:<br>
+      <code>PROD = a * b</code><br>
+      • Exibir o resultado formatado no padrão <code>PROD = X</code> com quebra de linha <code>\n</code> utilizando <code>printf()</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima a mensagem <code>PROD = </code> seguida do valor da variável <code>PROD</code> e de uma quebra de linha.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1004</i></p>
-      <h3 align="center">Simple Product</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input file contains two integer values.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read two integer values using <code>scanf()</code> into variables <code>a</code> and <code>b</code>.<br>
+      • Calculate the product of the two values and assign to <code>PROD</code>:<br>
+      <code>PROD = a * b</code><br>
+      • Output the result formatted as <code>PROD = X</code> with a newline <code>\n</code> using <code>printf()</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print the message <code>PROD = </code> followed by the <code>PROD</code> value and a newline character.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input file contains two integer values.
-
-*Example Input:*
-```
+```txt
 30
 10
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read two integer values using `scanf` and store them in variables `a` and `b`.
-- Multiply the two values using the formula:
-  $$PROD = a \times b$$
-- Output the result formatted as `PROD = X`, where `X` represents the product value, including a newline `\n` at the end.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the message `"PROD = "` followed by the `prod` value and a newline character.
-
-*Example Output:*
-```
+```txt
 PROD = 300
 ```
