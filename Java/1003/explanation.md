@@ -1,115 +1,60 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1003">
+    <img src="https://skillicons.dev/icons?i=java" width="45" alt="Java Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1003</i></p>
-      <h3 align="center">Soma Simples</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1003 — Soma Simples</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Java_19-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-1-orange?style=flat-square"/>
+  </p>
 
-#### 📥 Entrada:
-
-- A entrada contém dois valores inteiros.
-
-*Exemplo de entrada:*
-```
-30
-10
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- Ler dois valores inteiros da entrada padrão e armazená-los nas variáveis `A` e `B`.
-- Calcular a soma simples dos dois valores inteiros: $SOMA = A + B$.
-- Imprimir o resultado seguindo o formato exigido: a palavra `SOMA` em maiúsculas, com um espaço antes e depois do sinal de igual, seguida pelo valor da soma e uma quebra de linha `\n` ao final.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima a mensagem `SOMA = ` seguida pelo valor da variável `SOMA` e uma quebra de linha.
-
-*Exemplo de saída:*
-```
-SOMA = 40
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém dois valores inteiros.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Ler dois valores inteiros da entrada padrão e armazená-los nas variáveis <code>A</code> e <code>B</code>.<br>
+      • Calcular a soma simples dos dois valores inteiros: <code>SOMA = A + B</code>.<br>
+      • Imprimir o resultado seguindo o formato exigido: a palavra <code>SOMA</code> em maiúsculas, com um espaço antes e depois do sinal de igual, seguida pelo valor da soma e uma quebra de linha <code>\n</code> ao final.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima a mensagem <code>SOMA = </code> seguida pelo valor da variável <code>SOMA</code> e uma quebra de linha.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1003</i></p>
-      <h3 align="center">Simple Sum</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains two integer numbers.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read two integer values from standard input and store them in variables <code>A</code> and <code>B</code>.<br>
+      • Calculate the simple sum of both integers: <code>SOMA = A + B</code>.<br>
+      • Output the result using the required format: uppercase <code>SOMA</code>, with a space before and after the equal sign, followed by the sum result and an end-of-line break <code>\n</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print the message <code>SOMA = </code> followed by the value of variable <code>SOMA</code> and a newline.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input contains two integer numbers.
-
-*Example Input:*
-```
+```txt
 30
 10
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read two integer values from standard input and store them in variables `A` and `B`.
-- Calculate the simple sum of both integers: $SOMA = A + B$.
-- Output the result using the required format: uppercase `SOMA`, with a space before and after the equal sign, followed by the sum result and an end-of-line break `\n`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the message `SOMA = ` followed by the value of variable `SOMA` and a newline.
-
-*Example Output:*
-```
+```txt
 SOMA = 40
 ```

@@ -1,119 +1,63 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1006">
+    <img src="https://skillicons.dev/icons?i=java" width="45" alt="Java Logo" />
+  </a>
 
-<table>
+  <h3>beecrowd 1006 — Média 2</h3>
+
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Java_19-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-1-orange?style=flat-square"/>
+  </p>
+
+</div>
+
+---
+
+### 📌 Resumo / Overview
+
+<table align="center" width="100%">
   <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém três valores de ponto flutuante de dupla precisão (<code>double</code>), correspondentes às três notas de um aluno.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Ler as três notas de ponto flutuante <code>A</code>, <code>B</code> e <code>C</code>.<br>
+      • Calcular a média ponderada sabendo que a nota <code>A</code> tem peso <b>2</b>, a nota <code>B</code> tem peso <b>3</b> e a nota <code>C</code> tem peso <b>5</b>. A soma dos pesos é <b>10.0</b>:<br>
+      <code>MEDIA = ((A * 2) + (B * 3) + (C * 5)) / 10.0</code><br>
+      • Imprimir o resultado com a mensagem <code>MEDIA = </code> e o valor formatado com <b>1 casa decimal</b> após o ponto, seguido de uma quebra de linha <code>\n</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima a mensagem <code>MEDIA = </code> seguida pelo valor da média do aluno com 1 casa decimal e uma quebra de linha.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1006</i></p>
-      <h3 align="center">Média 2</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains three double-precision floating-point values representing a student's three grades.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read three floating-point numbers <code>A</code>, <code>B</code>, and <code>C</code>.<br>
+      • Calculate the weighted average considering grade <code>A</code> has a weight of <b>2</b>, grade <code>B</code> has a weight of <b>3</b>, and grade <code>C</code> has a weight of <b>5</b>. The sum of weights is <b>10.0</b>:<br>
+      <code>MEDIA = ((A * 2) + (B * 3) + (C * 5)) / 10.0</code><br>
+      • Print the message <code>MEDIA = </code> followed by the result formatted to <b>1 decimal place</b> and an end-of-line break <code>\n</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print the message <code>MEDIA = </code> followed by the student's average grade formatted with 1 decimal place and a newline.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Entrada:
-
-- A entrada contém três valores de ponto flutuante de dupla precisão (`double`), correspondentes às três notas de um aluno.
-
-*Exemplo de entrada:*
-```
+```txt
 5.0
 6.0
 7.0
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Lógica:
-
-- Ler as três notas de ponto flutuante `A`, `B` e `C`.
-- Calcular a média ponderada sabendo que a nota `A` tem peso **2**, a nota `B` tem peso **3** e a nota `C` tem peso **5**. A soma dos pesos é **10.0**:
-  $$\text{MEDIA} = \frac{(A \times 2) + (B \times 3) + (C \times 5)}{10.0}$$
-- Imprimir o resultado com a mensagem `MEDIA = ` e o valor formatado com **1 casa decimal** após o ponto, seguido de uma quebra de linha `\n`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima a mensagem `MEDIA = ` seguida pelo valor da média do aluno com 1 casa decimal e uma quebra de linha.
-
-*Exemplo de saída:*
-```
-MEDIA = 6.3
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
-  <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1006</i></p>
-      <h3 align="center">Average 2</h3>
-    </td>
-  </tr>
-</table>
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📥 Input:
-
-- The input contains three double-precision floating-point values representing a student's three grades.
-
-*Example Input:*
-```
-5.0
-6.0
-7.0
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read three floating-point numbers `A`, `B`, and `C`.
-- Calculate the weighted average considering grade `A` has a weight of **2**, grade `B` has a weight of **3**, and grade `C` has a weight of **5**. The sum of weights is **10.0**:
-  $$\text{MEDIA} = \frac{(A \times 2) + (B \times 3) + (C \times 5)}{10.0}$$
-- Print the message `MEDIA = ` followed by the result formatted to **1 decimal place** and an end-of-line break `\n`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the message `MEDIA = ` followed by the student's average grade formatted with 1 decimal place and a newline.
-
-*Example Output:*
-```
+```txt
 MEDIA = 6.3
 ```

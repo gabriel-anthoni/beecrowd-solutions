@@ -1,121 +1,63 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1013">
+    <img src="https://skillicons.dev/icons?i=java" width="45" alt="Java Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1013</i></p>
-      <h3 align="center">O Maior</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1013 — O Maior</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Java_19-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-3-orange?style=flat-square"/>
+  </p>
 
-#### 📥 Entrada:
-
-- A entrada contém três valores inteiros: $A$, $B$ e $C$.
-
-*Exemplo de entrada:*
-```
-7 14 106
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- Ler três números inteiros $A$, $B$ e $C$.
-- Calcular o maior número entre eles. O enunciado sugere a seguinte fórmula para o maior entre dois números $A$ e $B$:
-  $$\text{MaiorAB} = \frac{A + B + |A - B|}{2}$$
-- Em Java, a função `Math.abs()` calcula o valor absoluto ($|A - B|$). 
-- Alternativamente, também é possível utilizar `Math.max(A, B)` ou condicionais `if/else`.
-- Após encontrar o maior entre $A$ e $B$, compara-se esse resultado com o valor $C$.
-- Exibir o maior valor encontrado seguido da mensagem `" eh o maior"`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima o maior dos três valores seguido por um espaço e a mensagem `eh o maior` com quebra de linha `\n`.
-
-*Exemplo de saída:*
-```
-106 eh o maior
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém três valores inteiros: <code>A</code>, <code>B</code> e <code>C</code>.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Ler três números inteiros <code>A</code>, <code>B</code> e <code>C</code>.<br>
+      • Calcular o maior valor entre <code>A</code> e <code>B</code> utilizando a fórmula:<br>
+      <code>MaiorAB = (A + B + Math.abs(A - B)) / 2</code><br>
+      • Comparar o resultado <code>MaiorAB</code> com <code>C</code> para determinar o maior entre os três.<br>
+      • Exibir o maior valor encontrado seguido de um espaço e da mensagem <code>eh o maior</code> com quebra de linha <code>\n</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima o maior dos três valores seguido por um espaço e a mensagem <code>eh o maior</code> com quebra de linha.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1013</i></p>
-      <h3 align="center">The Greatest</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains three integer values: <code>A</code>, <code>B</code>, and <code>C</code>.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read three integer values <code>A</code>, <code>B</code>, and <code>C</code>.<br>
+      • Calculate the maximum value between <code>A</code> and <code>B</code> using the formula:<br>
+      <code>MaiorAB = (A + B + Math.abs(A - B)) / 2</code><br>
+      • Compare <code>MaiorAB</code> with <code>C</code> to find the greatest among all three.<br>
+      • Output the greatest value followed by a space and the string <code>eh o maior</code> with an end-of-line break <code>\n</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print the maximum value followed by a space and the string <code>eh o maior</code> with a newline.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input contains three integer values: $A$, $B$, and $C$.
-
-*Example Input:*
-```
+```txt
 7 14 106
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read three integer values $A$, $B$, and $C$.
-- Find the greatest value among them. The problem description suggests using the following formula to calculate the maximum between two values $A$ and $B$:
-  $$\text{MaiorAB} = \frac{A + B + |A - B|}{2}$$
-- In Java, `Math.abs()` computes the absolute difference ($|A - B|$).
-- Alternatively, `Math.max(A, B)` or `if/else` checks can be used.
-- After finding the maximum between $A$ and $B$, compare it with $C$.
-- Output the greatest number followed by the string `" eh o maior"`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the maximum value followed by a space and the string `eh o maior` with a newline `\n`.
-
-*Example Output:*
-```
+```txt
 106 eh o maior
 ```

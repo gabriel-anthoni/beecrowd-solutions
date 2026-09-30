@@ -1,119 +1,64 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1010">
+    <img src="https://skillicons.dev/icons?i=java" width="45" alt="Java Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1010</i></p>
-      <h3 align="center">Cálculo Simples</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1010 — Cálculo Simples</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Java_19-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-3-orange?style=flat-square"/>
+  </p>
 
-#### 📥 Entrada:
-
-- O arquivo de entrada contém duas linhas de dados. Em cada linha haverá 3 valores: o código de uma peça (`int`), o número de peças (`int`) e o valor unitário de cada peça (`double`).
-
-*Exemplo de entrada:*
-```
-12 1 5.30
-16 2 5.10
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- Ler as informações da primeira peça (código, quantidade e preço unitário).
-- Ler as informações da segunda peça (código, quantidade e preço unitário).
-- Calcular o valor total a ser pago multiplicando a quantidade de cada peça pelo seu preço unitário e somando os dois resultados:
-  $$\text{VALOR A PAGAR} = (Q_1 \times P_1) + (Q_2 \times P_2)$$
-- Imprimir a mensagem `VALOR A PAGAR: R$ ` seguida pelo valor total formatado com **2 casas decimais** e quebra de linha `\n`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima o valor total a ser pago com 2 casas decimais.
-
-*Exemplo de saída:*
-```
-VALOR A PAGAR: R$ 15.50
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      O arquivo de entrada contém duas linhas de dados. Em cada linha haverá 3 valores: o código de uma peça (<code>int</code>), o número de peças (<code>int</code>) e o valor unitário de cada peça (<code>double</code>).<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Ler as informações da primeira peça (código, quantidade e preço unitário).<br>
+      • Ler as informações da segunda peça (código, quantidade e preço unitário).<br>
+      • Calcular o valor total a ser pago multiplicando a quantidade de cada peça pelo seu preço unitário e somando os dois resultados:<br>
+      <code>VALOR A PAGAR = (Q1 * P1) + (Q2 * P2)</code><br>
+      • Imprimir a mensagem <code>VALOR A PAGAR: R$ </code> seguida pelo valor total formatado com <b>2 casas decimais</b> e quebra de linha <code>\n</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima o valor total a ser pago com 2 casas decimais.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1010</i></p>
-      <h3 align="center">Simple Calculate</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input file contains two lines of data. In each line there will be 3 values: code of a product (<code>int</code>), number of units of a product (<code>int</code>), and price for one unit (<code>double</code>).<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read information for the first product (code, quantity, unit price).<br>
+      • Read information for the second product (code, quantity, unit price).<br>
+      • Calculate total amount payable by multiplying quantity by unit price for each product and adding them up:<br>
+      <code>TOTAL = (Q1 * P1) + (Q2 * P2)</code><br>
+      • Output <code>VALOR A PAGAR: R$ </code> followed by the total formatted to <b>2 decimal places</b> and an end-of-line break <code>\n</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print the total amount to pay with 2 decimal places.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input file contains two lines of data. In each line there will be 3 values: code of a product (`int`), number of units of a product (`int`), and price for one unit (`double`).
-
-*Example Input:*
-```
+```txt
 12 1 5.30
 16 2 5.10
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read information for the first product (code, quantity, unit price).
-- Read information for the second product (code, quantity, unit price).
-- Calculate total amount payable by multiplying quantity by unit price for each product and adding them up:
-  $$\text{TOTAL} = (Q_1 \times P_1) + (Q_2 \times P_2)$$
-- Output `VALOR A PAGAR: R$ ` followed by the total formatted to **2 decimal places** and an end-of-line break `\n`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the total amount to pay with 2 decimal places.
-
-*Example Output:*
 ```
 VALOR A PAGAR: R$ 15.50
 ```

@@ -1,121 +1,61 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1016">
+    <img src="https://skillicons.dev/icons?i=java" width="45" alt="Java Logo" />
+  </a>
 
-<table>
-  <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1016</i></p>
-      <h3 align="center">Distância</h3>
-    </td>
-  </tr>
-</table>
+  <h3>beecrowd 1016 — Distância</h3>
 
-<!----------------------------------------------------------------------------------------->
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Java_19-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-1-orange?style=flat-square"/>
+  </p>
 
-#### 📥 Entrada:
-
-- A entrada contém um único valor inteiro representando a distância $D$ (em km) que o carro Y deve se distanciar do carro X.
-
-*Exemplo de entrada:*
-```
-30
-```
+</div>
 
 ---
 
-<!----------------------------------------------------------------------------------------->
+### 📌 Resumo / Overview
 
-#### 🧠 Lógica:
-
-- O carro X roda a uma velocidade constante de 60 km/h e o carro Y roda a 90 km/h.
-- A velocidade relativa do carro Y em relação ao carro X é:
-  $$\text{Velocidade Relativa} = 90 - 60 = 30 \text{ km/h}$$
-- Se o carro Y ganha 30 km de vantagem em 60 minutos, ele ganha 1 km a cada 2 minutos:
-  $$\text{Tempo por km} = \frac{60 \text{ min}}{30 \text{ km}} = 2 \text{ min/km}$$
-- Portanto, para uma distância $D$, o tempo necessário em minutos é dado por:
-  $$\text{Tempo} = D \times 2$$
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima o tempo necessário seguido da mensagem `minutos` e uma quebra de linha `\n`.
-
-*Exemplo de saída:*
-```
-60 minutos
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
+<table align="center" width="100%">
   <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém um único valor inteiro representando a distância <code>D</code> (em km) que o carro Y deve se distanciar do carro X.<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Ler a distância <code>D</code> (<code>int</code>).<br>
+      • Sabendo que a velocidade relativa entre os carros é de 30 km/h (1 km a cada 2 minutos), calcular o tempo necessário:<br>
+      <code>Tempo = D * 2</code><br>
+      • Exibir o tempo calculado seguido de um espaço e da mensagem <code>minutos</code> com quebra de linha <code>\n</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima o tempo necessário seguido da mensagem <code>minutos</code> e uma quebra de linha.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1016</i></p>
-      <h3 align="center">Distance</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input file contains a single integer value representing the distance <code>D</code> (in km) that car Y needs to take away from car X.<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read the distance <code>D</code> (<code>int</code>).<br>
+      • Given that the relative speed between the cars is 30 km/h (1 km every 2 minutes), calculate the required time:<br>
+      <code>Time = D * 2</code><br>
+      • Output the calculated time followed by a space and the string <code>minutos</code> with an end-of-line break <code>\n</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print the calculated time followed by the message <code>minutos</code> and a newline.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Input:
-
-- The input file contains a single integer value representing the distance $D$ (in km) that car Y needs to take away from car X.
-
-*Example Input:*
-```
+```txt
 30
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Car X travels at a constant speed of 60 km/h and car Y travels at 90 km/h.
-- The relative speed of car Y compared to car X is:
-  $$\text{Relative Speed} = 90 - 60 = 30 \text{ km/h}$$
-- Since car Y gains 30 km of distance in 60 minutes, it gains 1 km every 2 minutes:
-  $$\text{Time per km} = \frac{60 \text{ min}}{30 \text{ km}} = 2 \text{ min/km}$$
-- Thus, for a distance $D$, the total required time in minutes is calculated as:
-  $$\text{Time} = D \times 2$$
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the calculated time followed by the message `minutos` and a newline `\n`.
-
-*Example Output:*
-```
+```txt
 60 minutos
 ```

@@ -1,120 +1,63 @@
-### <img src="https://static.wikia.nocookie.net/duolingo/images/1/17/Brazil_bandera.png/revision/latest?cb=20230710181600&path-prefix=es" width="20"> PT-BR
+<div align="center">
 
-<!----------------------------------------------------------------------------------------->
+  <a href="https://judge.beecrowd.com/pt/problems/view/1008">
+    <img src="https://skillicons.dev/icons?i=java" width="45" alt="Java Logo" />
+  </a>
 
-<table>
+  <h3>beecrowd 1008 — Salário</h3>
+
+  <p>
+    <img src="https://img.shields.io/badge/Linguagem-Java_19-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+    <img src="https://img.shields.io/badge/N%C3%ADvel-2-orange?style=flat-square"/>
+  </p>
+
+</div>
+
+---
+
+### 📌 Resumo / Overview
+
+<table align="center" width="100%">
   <tr>
-    <th width="300">Linguagem</th>
-    <th width="1000">Questão</th>
+    <th width="50%">🇧🇷 Português (PT-BR)</th>
+    <th width="50%">🇺🇸 English (EN)</th>
   </tr>
   <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
+    <td valign="top">
+      <b>📥 Entrada:</b><br>
+      A entrada contém dois números inteiros (número do funcionário e quantidade de horas trabalhadas) e um valor de ponto flutuante (<code>double</code>, valor que o funcionário recebe por hora).<br><br>
+      <b>🧠 Lógica:</b><br>
+      • Ler o número do funcionário, a quantidade de horas trabalhadas e o valor ganho por hora.<br>
+      • Calcular o salário total multiplicando as horas trabalhadas pelo valor ganho por hora:<br>
+      <code>SALARY = hoursWorked * valuePerHour</code><br>
+      • Imprimir o número do funcionário formatado como <code>NUMBER = </code> e, na linha seguinte, o salário formatado com o prefixo <code>SALARY = U$ </code> seguido do valor com <b>2 casas decimais</b> e quebra de linha <code>\n</code>.<br><br>
+      <b>📤 Saída:</b><br>
+      Imprima o número do funcionário e o seu salário total com 2 casas decimais.
     </td>
-    <td>
-      <p align="center"><i>beecrowd | 1008</i></p>
-      <h3 align="center">Salário</h3>
+    <td valign="top">
+      <b>📥 Input:</b><br>
+      The input contains two integer numbers (employee's number and worked hours) and one double-precision floating-point value (amount received per hour).<br><br>
+      <b>🧠 Logic:</b><br>
+      • Read the employee's number, worked hours, and hourly rate.<br>
+      • Calculate total salary by multiplying worked hours by hourly rate:<br>
+      <code>SALARY = hoursWorked * valuePerHour</code><br>
+      • Print employee number formatted as <code>NUMBER = </code> and, on the next line, salary formatted as <code>SALARY = U$ </code> with <b>2 decimal places</b> and an end-of-line break <code>\n</code>.<br><br>
+      <b>📤 Output:</b><br>
+      Print the employee's number and total salary with 2 decimal places.
     </td>
   </tr>
 </table>
 
-<!----------------------------------------------------------------------------------------->
+### 📥 Exemplo de Entrada / Example Input
 
-#### 📥 Entrada:
-
-- A entrada contém dois números inteiros (número do funcionário e quantidade de horas trabalhadas) e um valor de ponto flutuante (`double`, valor que o funcionário recebe por hora).
-
-*Exemplo de entrada:*
-```
+```txt
 25
 100
 5.50
 ```
 
----
+### 📤 Exemplo de Saída / Example Output
 
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Lógica:
-
-- Ler o número do funcionário, a quantidade de horas trabalhadas e o valor ganho por hora.
-- Calcular o salário total multiplicando as horas trabalhadas pelo valor ganho por hora:
-  $$\text{SALARY} = \text{hoursWorked} \times \text{valuePerHour}$$
-- Imprimir o número do funcionário formatado como `NUMBER = ` e, na linha seguinte, o salário formatado com o prefixo `SALARY = U$ ` seguido do valor com **2 casas decimais** e quebra de linha `\n`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Saída:
-
-- Imprima o número do funcionário e o seu salário total com 2 casas decimais.
-
-*Exemplo de saída:*
-```
-NUMBER = 25
-SALARY = U$ 550.00
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-### <img src="https://static.wikia.nocookie.net/duolingo/images/7/79/Ingles.png/revision/latest?cb=20230710181050&path-prefix=es" width="20"> EN
-
-<!----------------------------------------------------------------------------------------->
-
-<table>
-  <tr>
-    <th width="300">Language</th>
-    <th width="1000">Problem</th>
-  </tr>
-  <tr>
-    <td>
-      <p align="center"><img src="https://skillicons.dev/icons?i=java"></p>
-      <p align="center"><code>Java 19</code></p>
-    </td>
-    <td>
-      <p align="center"><i>beecrowd | 1008</i></p>
-      <h3 align="center">Salary</h3>
-    </td>
-  </tr>
-</table>
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📥 Input:
-
-- The input contains two integer numbers (employee's number and worked hours) and one double-precision floating-point value (amount received per hour).
-
-*Example Input:*
-```
-25
-100
-5.50
-```
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 🧠 Logic:
-
-- Read the employee's number, worked hours, and hourly rate.
-- Calculate total salary by multiplying worked hours by hourly rate:
-  $$\text{SALARY} = \text{hoursWorked} \times \text{valuePerHour}$$
-- Print employee number formatted as `NUMBER = ` and, on the next line, salary formatted as `SALARY = U$ ` with **2 decimal places** and an end-of-line break `\n`.
-
----
-
-<!----------------------------------------------------------------------------------------->
-
-#### 📤 Output:
-
-- Print the employee's number and total salary with 2 decimal places.
-
-*Example Output:*
 ```
 NUMBER = 25
 SALARY = U$ 550.00
